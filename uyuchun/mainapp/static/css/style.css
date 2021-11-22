@@ -1,0 +1,25 @@
+.mainblock {
+  height: 1000px;
+  background: #AAA;
+}
+.header {
+  height: 100px;
+  background: #AFA;
+}
+.header__logo {
+  height: 100px;
+  background: #7F7;
+}
+.header__contacts {
+  height: 100px;
+  background: #5F5;
+}
+.footer {
+  height: 200px;
+  background: #FAA;
+}
+.menu {
+  height: 1000px;
+  background: #AAF;
+}
+/*# sourceMappingURL=style.css.map */
