@@ -5,6 +5,7 @@ from . import views
 
 
 # Config
+app_name = 'mainapp'
 urlpatterns = [
     path('', views.index, name='index')
 ]
