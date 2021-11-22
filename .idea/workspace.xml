@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a964e98d-d1bd-4bf0-9c13-631aec177d4e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/uyuchun/db.sqlite3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uyuchun/uyuchun/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/uyuchun/uyuchun/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uyuchun/mainapp/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/uyuchun/mainapp/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uyuchun/mainapp/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/uyuchun/mainapp/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uyuchun/mainapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/uyuchun/mainapp/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uyuchun/mainapp/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/uyuchun/mainapp/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uyuchun/mainapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/uyuchun/mainapp/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,7 +48,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1637601098056</updated>
-      <workItem from="1637601101311" duration="1623000" />
+      <workItem from="1637601101311" duration="1863000" />
     </task>
     <task id="LOCAL-00001" summary="system fix">
       <created>1637602501364</created>
@@ -68,7 +71,21 @@
       <option name="project" value="LOCAL" />
       <updated>1637602561213</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="changed DB to MySQL">
+      <created>1637602773404</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1637602773404</updated>
+    </task>
+    <task id="LOCAL-00005" summary="system fix">
+      <created>1637602802988</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1637602802988</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -87,9 +104,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="system fix" />
     <MESSAGE value="collected static" />
     <MESSAGE value="create project" />
-    <option name="LAST_COMMIT_MESSAGE" value="create project" />
+    <MESSAGE value="changed DB to MySQL" />
+    <MESSAGE value="system fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="system fix" />
   </component>
 </project>
