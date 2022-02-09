@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a964e98d-d1bd-4bf0-9c13-631aec177d4e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/uyuchun/mainapp/media/products/p2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uyuchun/mainapp/media/products/p2_ASIxBCl.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uyuchun/mainapp/media/products/p2_E0frTHg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uyuchun/admin/migrations/0005_footer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uyuchun/mainapp/templates/mainapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/uyuchun/mainapp/templates/mainapp/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uyuchun/admin/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/uyuchun/admin/models.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -141,28 +139,7 @@
       <workItem from="1644207625230" duration="3451000" />
       <workItem from="1644346914937" duration="767000" />
       <workItem from="1644382478485" duration="3893000" />
-      <workItem from="1644399670008" duration="2954000" />
-    </task>
-    <task id="LOCAL-00020" summary="created main.js">
-      <created>1637608407442</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1637608407442</updated>
-    </task>
-    <task id="LOCAL-00021" summary="created style.less">
-      <created>1637608420940</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1637608420940</updated>
-    </task>
-    <task id="LOCAL-00022" summary="created footer">
-      <created>1637609364327</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1637609364327</updated>
+      <workItem from="1644399670008" duration="4144000" />
     </task>
     <task id="LOCAL-00023" summary="created header">
       <created>1637609373818</created>
@@ -486,7 +463,28 @@
       <option name="project" value="LOCAL" />
       <updated>1644400103860</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="adding content">
+      <created>1644405800070</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1644405800070</updated>
+    </task>
+    <task id="LOCAL-00070" summary="fixed popular products">
+      <created>1644405823358</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1644405823358</updated>
+    </task>
+    <task id="LOCAL-00071" summary="internal update">
+      <created>1644405834927</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1644405834927</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -508,8 +506,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add catalog page" />
-    <MESSAGE value="add content page" />
     <MESSAGE value="add content header template" />
     <MESSAGE value="add error template" />
     <MESSAGE value="add index template" />
@@ -529,10 +525,12 @@
     <MESSAGE value="add:&#10;Product form&#10;Product Image form&#10;Category form&#10;SubCategory form" />
     <MESSAGE value="add e-shop template" />
     <MESSAGE value="add plug template" />
-    <MESSAGE value="internal update" />
     <MESSAGE value="edit image input label" />
     <MESSAGE value="fixed bug with adding empty image" />
     <MESSAGE value="fixed a bug with wrong showing image" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed a bug with wrong showing image" />
+    <MESSAGE value="adding content" />
+    <MESSAGE value="fixed popular products" />
+    <MESSAGE value="internal update" />
+    <option name="LAST_COMMIT_MESSAGE" value="internal update" />
   </component>
 </project>
