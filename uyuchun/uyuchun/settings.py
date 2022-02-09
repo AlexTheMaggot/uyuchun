@@ -13,13 +13,13 @@ SECRET_KEY = '@my8&l^^re=2bz(mc9y@lv*a725g-j#655eikbr7^+3w#o24gd'
 DEBUG = True
 ALLOWED_HOSTS = ['*', ]
 INSTALLED_APPS = [
-    'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'mainapp.apps.MainappConfig',
+    'admin.apps.AdminConfig',
 ]
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
