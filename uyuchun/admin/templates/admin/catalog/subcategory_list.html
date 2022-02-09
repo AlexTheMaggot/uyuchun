@@ -1,0 +1,32 @@
+{% extends 'admin_wrapper.html' %}
+{% block title %}Список подкатегорий{% endblock %}
+{% block content %}
+
+    <div class="container-fluid index">
+        {% include 'blocks/admin_header.html' %}
+        <div class="row">
+            <div class="col-12 index__col">
+                <div class="block-item">
+                    <h1 class="d-inline-block mb-3">Все подкатегории</h1>
+                    <a href="{% url 'admin:subcategory_create' %}" class="mb-3 btn btn-success d-inline-block">Добавить</a>
+                    <table class="table table-striped">
+                        {% for subcategory in subcategories %}
+                            <tr class="align-middle">
+                                <td class="w-75 vertic">
+                                <p class="mb-0">{{ subcategory.name }}</p>
+                                </td>
+                                <td class="w-auto">
+                                    <a href="{% url 'admin:subcategory_update' subcategory.id %}" class="btn btn-warning">Изменить</a>
+                                </td>
+                                <td>
+                                    <a href="{% url 'admin:subcategory_delete' subcategory.id %}" class="btn btn-danger">Удалить</a>
+                                </td>
+
+                            </tr>
+                        {% endfor %}
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
