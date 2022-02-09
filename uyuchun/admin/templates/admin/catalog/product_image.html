@@ -13,7 +13,7 @@
                         {% csrf_token %}
                         <input type="hidden" value="{{ product.id }}" name="product">
                         <label for="img" class="form-label">Добавить изображение (600 x 750 px)</label>
-                        <input type="file" class="form-control mb-3" name="img" id="img">
+                        <input type="file" class="form-control mb-3" name="img" id="img" required>
                         <input type="submit" class="btn btn-success" value="Добавить">
                     </form>
                     <div class="row">
