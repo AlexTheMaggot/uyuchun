@@ -1,0 +1,32 @@
+{% extends 'admin_wrapper.html' %}
+{% block title %}Контент{% endblock %}
+{% block content %}
+
+    <div class="container-fluid index">
+        {% include 'blocks/admin_header.html' %}
+        <div class="row">
+            <div class="col-12 index__col">
+                <div class="block-item">
+                    <h1 class="d-inline-block">Настройка шапки страницы</h1>
+                    <a href="{% url 'admin:content' %}" class="btn btn-primary d-inline-block mb-3">Назад</a>
+                    <form class="w-25" action="" method="POST" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        <label for="logo" class="form-label">Логотип (110x32)</label>
+                        <input type="file" class="form-control mb-3" id="logo" name="logo">
+                        <p>Текущий логотип</p>
+                        <img src="{{ header.logo.url }}" alt="" class="h-100 d-block mb-3">
+                        <label for="phone" class="form-label">Номер телефона</label>
+                        <input type="text" class="form-control mb-3" name="phone" id="phone" value="{{ header.phone }}">
+                        <label for="instagram" class="form-label">Логин Instagram (без @)</label>
+                        <input type="text" class="form-control mb-3" name="instagram" id="instagram" value="{{ header.instagram }}">
+                        <label for="address" class="form-label">Адрес</label>
+                        <input type="text" class="form-control mb-3" name="address" id="address" value="{{ header.address }}">
+                        <label for="worktime" class="form-label">Время работы</label>
+                        <input type="text" class="form-control mb-3" name="worktime" id="worktime" value="{{ header.worktime }}">
+                        <input type="submit" class="btn btn-success" value="Сохранить">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
