@@ -1,0 +1,31 @@
+{% extends 'admin_wrapper.html' %}
+{% block title %}Изображения товара - {{ product.name }}{% endblock %}
+{% block content %}
+
+    <div class="container-fluid index">
+        {% include 'blocks/admin_header.html' %}
+        <div class="row">
+            <div class="col-12 index__col">
+                <div class="block-item">
+                    <h1 class="d-inline-block mb-3">Изображения товара - {{ product.name }}</h1>
+                    <a href="{% url 'admin:product_list' %}" class="btn btn-primary mb-3">Назад</a>
+                    <form class="w-25" action="" method="POST" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        <input type="hidden" value="{{ product.id }}" name="product">
+                        <label for="img" class="form-label">Добавить изображение</label>
+                        <input type="file" class="form-control mb-3" name="img" id="img">
+                        <input type="submit" class="btn btn-success" value="Добавить">
+                    </form>
+                    <div class="row">
+                        {% for image in product.images.all %}
+                            <div class="col-3 d-flex justify-content-center align-items-center flex-column">
+                                <img src="{{ image.img.url }}" alt="" class="mt-5 mb-3">
+                                <a href="{% url 'admin:product_image_delete' product.id image.id %}" class="btn btn-danger">Удалить</a>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
