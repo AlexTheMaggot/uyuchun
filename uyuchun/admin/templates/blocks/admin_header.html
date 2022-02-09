@@ -1,0 +1,33 @@
+<header>
+    <div class="row index__row">
+        <div class="col-3 index__col">
+            <div class="block-item d-flex justify-content-center align-items-center"></div>
+        </div>
+        <div class="col-8 index__col">
+            <div class="block-item d-flex justify-content-center align-items-center">
+
+                    {% if '/catalog/' in request.path %}
+                        <a href="{% url 'admin:catalog' %}" class="top-menu__link btn btn-outline-dark">Каталог</a>
+                    {% else %}
+                        <a href="{% url 'admin:catalog' %}" class="top-menu__link btn btn-dark">Каталог</a>
+                    {% endif %}
+
+                    {% if '/content/' in request.path %}
+                        <a href="{% url 'admin:content' %}" class="top-menu__link btn btn-outline-dark">Контент</a>
+                    {% else %}
+                        <a href="{% url 'admin:content' %}" class="top-menu__link btn btn-dark">Контент</a>
+                    {% endif %}
+                    {% if '/pages/' in request.path %}
+                        <a href="{% url 'admin:pages' %}" class="top-menu__link btn btn-outline-dark">Страницы</a>
+                    {% else %}
+                        <a href="{% url 'admin:pages' %}" class="top-menu__link btn btn-dark">Страницы</a>
+                    {% endif %}
+            </div>
+        </div>
+        <div class="col-1 index__col">
+            <div class="block-item d-flex justify-content-center align-items-center">
+                <a class="logout btn btn-danger" href="{% url 'admin:logout' %}">Выйти</a>
+            </div>
+        </div>
+    </div>
+</header>
