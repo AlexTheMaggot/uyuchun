@@ -26,3 +26,16 @@ class IndexPage(models.Model):
     secondblock_third_second_title = models.CharField(max_length=200, null=True, blank=True)
     secondblock_third_subtitle = models.CharField(max_length=200, null=True, blank=True)
     secondblock_third_img = models.ImageField(upload_to='indexpage/', null=True, blank=True)
+
+
+class Footer(models.Model):
+    logo = models.ImageField(upload_to='footer/', null=True, blank=True)
+    description = models.TextField(null=True, blank=True)
+    phone = models.CharField(max_length=200, null=True, blank=True)
+    address = models.CharField(max_length=200, null=True, blank=True)
+    email = models.CharField(max_length=200, null=True, blank=True)
+    facebook = models.CharField(max_length=200, null=True, blank=True)
+    twitter = models.CharField(max_length=200, null=True, blank=True)
+    youtube = models.CharField(max_length=200, null=True, blank=True)
+    instagram = models.CharField(max_length=200, null=True, blank=True)
+    copyright = models.CharField(max_length=200, null=True, blank=True)
