@@ -1,0 +1,24 @@
+{% extends 'admin_wrapper.html' %}
+{% block title %}{{ category.name }} - изменить{% endblock %}
+{% block content %}
+
+    <div class="container-fluid index">
+        {% include 'blocks/admin_header.html' %}
+        <div class="row">
+            <div class="col-12 index__col">
+                <div class="block-item">
+                    <h1 class="d-inline-block">{{ category.name }} - изменить</h1>
+                    <a href="{% url 'admin:category_list' %}" class="btn btn-primary d-inline-block mb-3">Назад</a>
+                    <form class="w-25" action="" method="POST" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        <label for="name" class="form-label">Название категории</label>
+                        <input type="text" class="form-control mb-3" name="name" id="name" value="{{ category.name }}">
+                        <label for="slug" class="form-label">URL</label>
+                        <input type="text" class="form-control mb-3" name="slug" id="slug" value="{{ category.slug }}" required>
+                        <input type="submit" class="btn btn-success" value="Сохранить">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
