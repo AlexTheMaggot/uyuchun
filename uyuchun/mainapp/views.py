@@ -1,10 +1,27 @@
 # Imports
 from django.shortcuts import render
+from admin.models import Header, IndexPage
+from .models import Category
 # End Imports
 
 
+def get_context():
+    context = {
+        'header': Header.objects.first(),
+        'categories': Category.objects.all(),
+    }
+    return context
+
+
 # Config
-def index(request):
-    template = 'mainapp/index.html'
+def plug(request):
+    template = 'mainapp/plug.html'
     return render(request, template)
+
+
+def index(request):
+    context = get_context()
+    context['indexpage'] = IndexPage.objects.first()
+    template = 'mainapp/index.html'
+    return render(request, template, context)
 # End Config
