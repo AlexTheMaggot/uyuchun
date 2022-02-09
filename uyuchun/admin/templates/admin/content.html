@@ -1,0 +1,15 @@
+{% extends 'admin_wrapper.html' %}
+{% block title %}Контент{% endblock %}
+{% block content %}
+
+    <div class="container-fluid index">
+        {% include 'blocks/admin_header.html' %}
+        <div class="row">
+            <div class="col-12 index__col">
+                <div class="block-item">
+                    <a href="{% url 'admin:content_header' %}" class="btn btn-primary">Настройка шапки страницы</a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
