@@ -1,0 +1,32 @@
+{% extends 'admin_wrapper.html' %}
+{% block title %}Список категорий{% endblock %}
+{% block content %}
+
+    <div class="container-fluid index">
+        {% include 'blocks/admin_header.html' %}
+        <div class="row">
+            <div class="col-12 index__col">
+                <div class="block-item">
+                    <h1 class="d-inline-block mb-3">Все категории</h1>
+                    <a href="{% url 'admin:category_create' %}" class="mb-3 btn btn-success d-inline-block">Добавить</a>
+                    <table class="table table-striped">
+                        {% for category in categories %}
+                            <tr class="align-middle">
+                                <td class="w-75 vertic">
+                                <p class="mb-0">{{ category.name }}</p>
+                                </td>
+                                <td class="w-auto">
+                                    <a href="{% url 'admin:category_update' category.id %}" class="btn btn-warning">Изменить</a>
+                                </td>
+                                <td>
+                                    <a href="{% url 'admin:category_delete' category.id %}" class="btn btn-danger">Удалить</a>
+                                </td>
+
+                            </tr>
+                        {% endfor %}
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
