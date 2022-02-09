@@ -1,0 +1,34 @@
+{% extends 'admin_wrapper.html' %}
+{% block title %}Новый товар{% endblock %}
+{% block content %}
+
+    <div class="container-fluid index">
+        {% include 'blocks/admin_header.html' %}
+        <div class="row">
+            <div class="col-12 index__col">
+                <div class="block-item">
+                    <h1 class="d-inline-block">Новый товар</h1>
+                    <a href="{% url 'admin:product_list' %}" class="btn btn-primary d-inline-block mb-3">Назад</a>
+                    <form class="w-25" action="" method="POST" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        <label for="name" class="form-label">Название</label>
+                        <input type="text" class="form-control mb-3" name="name" id="name">
+                        <label for="slug" class="form-label">URL</label>
+                        <input type="text" class="form-control mb-3" name="slug" id="slug" required>
+                        <label for="price" class="form-label">Цена</label>
+                        <input type="number" class="form-control mb-3" name="price" id="price">
+                        <label for="subcategory" class="form-label">Укажите подкатегорию</label>
+                        <select class="form-select" name="subcategory" id="subcategory">
+                            {% for subcategory in subcategories %}
+                                <option value="{{ subcategory.id }}">{{ subcategory.name }}</option>
+                            {% endfor %}
+                        </select>
+                        <label for="description" class="form-label">Описание</label>
+                        <textarea class="form-control mb-3" name="description" id="description" rows="7"></textarea>
+                        <input type="submit" class="btn btn-success" value="Сохранить">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
