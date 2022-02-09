@@ -1,0 +1,47 @@
+#appearance {
+  opacity: 0;
+  transition: all 0.5s;
+  transform: translateY(-30px);
+}
+textarea {
+  resize: none;
+}
+.auth {
+  background: #FFF;
+  padding: 30px 60px;
+  border-radius: 10px;
+}
+.auth__container {
+  background: #333;
+  width: 100vw;
+  height: 100vh;
+}
+.auth__input {
+  margin-bottom: 10px;
+}
+.auth__submit {
+  display: block;
+  margin: 0 auto;
+}
+.index {
+  min-height: 100vh;
+  background: #333;
+}
+.index__col {
+  padding: 0;
+}
+.logout__col {
+  padding: 30px;
+}
+.block-item {
+  background: #FFF;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 15px;
+  min-height: 100px;
+}
+.top-menu__link {
+  font-size: 1.5rem;
+  margin-right: 15px;
+}
+/*# sourceMappingURL=style.css.map */
