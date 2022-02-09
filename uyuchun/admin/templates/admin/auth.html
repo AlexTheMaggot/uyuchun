@@ -1,0 +1,19 @@
+{% extends 'admin_wrapper.html' %}
+{% block title %}Авторизация{% endblock %}
+{% block content %}
+    <div class="container-fluid auth__container d-flex justify-content-center align-items-center">
+        <div class="row auth__row">
+            <div class="auth" id="appearance">
+                <h1 class="auth__title text-center">Авторизация</h1>
+                <form action="" method="POST" class="auth__form">
+                    {% csrf_token %}
+                    <label for="username" class="form-label auth__label">Введите логин</label>
+                    <input id="username" type="text" name="username" class="form-control auth__input">
+                    <label for="password" class="form-label auth__label">Введите пароль</label>
+                    <input id="password" type="password" name="password" class="form-control auth__input">
+                    <input type="submit" class="btn btn-success auth__submit">
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}
