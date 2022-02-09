@@ -1,0 +1,35 @@
+{% extends 'admin_wrapper.html' %}
+{% block title %}Список товаров{% endblock %}
+{% block content %}
+
+    <div class="container-fluid index">
+        {% include 'blocks/admin_header.html' %}
+        <div class="row">
+            <div class="col-12 index__col">
+                <div class="block-item">
+                    <h1 class="d-inline-block mb-3">Все товары</h1>
+                    <a href="{% url 'admin:product_create' %}" class="mb-3 btn btn-success d-inline-block">Добавить</a>
+                    <table class="table table-striped">
+                        {% for product in products %}
+                            <tr class="align-middle">
+                                <td class="w-75 vertic">
+                                <p class="mb-0">{{ product.name }}</p>
+                                </td>
+                                <td class="w-auto">
+                                    <a href="{% url 'admin:product_image' product.id %}" class="btn btn-primary">Изображения</a>
+                                </td>
+                                <td class="w-auto">
+                                    <a href="{% url 'admin:product_update' product.id %}" class="btn btn-warning">Изменить</a>
+                                </td>
+                                <td>
+                                    <a href="{% url 'admin:product_delete' product.id %}" class="btn btn-danger">Удалить</a>
+                                </td>
+
+                            </tr>
+                        {% endfor %}
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
