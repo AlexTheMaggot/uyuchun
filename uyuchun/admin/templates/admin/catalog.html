@@ -1,0 +1,25 @@
+{% extends 'admin_wrapper.html' %}
+{% block title %}Контент{% endblock %}
+{% block content %}
+
+    <div class="container-fluid index">
+        {% include 'blocks/admin_header.html' %}
+        <div class="row">
+            <div class="col-12 index__col">
+                <div class="block-item">
+                    <ul>
+                        <li class="d-flex pb-3">
+                            <a href="{% url 'admin:category_list' %}" class="btn btn-primary">Настроить категории</a>
+                        </li>
+                        <li class="d-flex pb-3">
+                            <a href="{% url 'admin:subcategory_list' %}" class="btn btn-primary">Настроить подкатегории</a>
+                        </li>
+                        <li class="d-flex pb-3">
+                            <a href="{% url 'admin:product_list' %}" class="btn btn-primary">Настроить товары</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
