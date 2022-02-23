@@ -9,6 +9,7 @@
                 <div class="block-item">
                     <h1 class="d-inline-block mb-3">Все категории</h1>
                     <a href="{% url 'admin:category_create' %}" class="mb-3 btn btn-success d-inline-block">Добавить</a>
+                    <a href="{% url 'admin:catalog' %}" class="mb-3 btn btn-primary d-inline-block">Назад</a>
                     <table class="table table-striped">
                         {% for category in categories %}
                             <tr class="align-middle">
