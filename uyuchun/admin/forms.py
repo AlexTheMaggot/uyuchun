@@ -1,7 +1,7 @@
 from django import forms
 from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth.models import User
-from .models import Header, IndexPage
+from .models import Header, IndexPage, Footer
 
 
 class AuthLoginForm(AuthenticationForm, forms.ModelForm):
@@ -14,6 +14,23 @@ class HeaderForm(forms.ModelForm):
     class Meta:
         model = Header
         fields = ('logo', 'phone', 'instagram', 'address', 'worktime',)
+
+
+class FooterForm(forms.ModelForm):
+    class Meta:
+        model = Footer
+        fields = (
+            'logo',
+            'description',
+            'phone',
+            'address',
+            'email',
+            'facebook',
+            'twitter',
+            'youtube',
+            'instagram',
+            'copyright',
+        )
 
 
 class IndexPageForm(forms.ModelForm):

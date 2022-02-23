@@ -1,8 +1,8 @@
 from django.shortcuts import render, redirect, HttpResponse
 from django.contrib.auth.views import LoginView, LogoutView
 from django.urls import reverse_lazy
-from .forms import AuthLoginForm, HeaderForm, IndexPageForm
-from .models import Header, IndexPage
+from .forms import AuthLoginForm, HeaderForm, IndexPageForm, FooterForm
+from .models import Header, IndexPage, Footer
 from mainapp.models import Category, SubCategory, Product, ProductImage
 from mainapp.forms import CategoryForm, SubCategoryForm, ProductForm, ProductImageForm
 
@@ -50,6 +50,28 @@ def content_header(request):
             if form.is_valid():
                 form.save()
                 return redirect('admin:content_header')
+            else:
+                return redirect('admin:error')
+        else:
+            return HttpResponse(status=403)
+    else:
+        return redirect('admin:login')
+
+
+def content_footer(request):
+    if request.user.is_authenticated:
+        if request.method == 'GET':
+            context = {
+                'footer': Footer.objects.first(),
+            }
+            template = 'admin/content_footer.html'
+            return render(request, template, context)
+        elif request.method == 'POST':
+            footer = Footer.objects.first()
+            form = FooterForm(request.POST, request.FILES, instance=footer)
+            if form.is_valid():
+                form.save()
+                return redirect('admin:content_footer')
             else:
                 return redirect('admin:error')
         else:

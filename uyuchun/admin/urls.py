@@ -11,6 +11,7 @@ urlpatterns = [
     # Content
     path('content/', views.content, name='content'),
     path('content/header/', views.content_header, name='content_header'),
+    path('content/footer/', views.content_footer, name='content_footer'),
     # End Content
 
     # Catalog

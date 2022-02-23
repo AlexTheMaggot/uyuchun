@@ -1,0 +1,44 @@
+{% extends 'admin_wrapper.html' %}
+{% block title %}Настройка подвала страницы{% endblock %}
+{% block content %}
+
+    <div class="container-fluid index">
+        {% include 'blocks/admin_header.html' %}
+        <div class="row">
+            <div class="col-12 index__col">
+                <div class="block-item">
+                    <h1 class="d-inline-block">Настройка подвала страницы</h1>
+                    <a href="{% url 'admin:content' %}" class="btn btn-primary d-inline-block mb-3">Назад</a>
+                    <form class="w-25" action="" method="POST" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        <label for="logo" class="form-label">Логотип (110x32)</label>
+                        <input type="file" class="form-control mb-3" id="logo" name="logo">
+                        <p>Текущий логотип</p>
+                        {% if footer.logo %}
+                            <img src="{{ footer.logo.url }}" alt="" class="h-100 d-block mb-3">
+                        {% endif %}
+                        <label for="description" class="form-label">Описание</label>
+                        <textarea name="description" id="description" cols="30" rows="10" class="form-control mb-3">{{ footer.description }}</textarea>
+                        <label for="phone" class="form-label">Номер телефона</label>
+                        <input type="text" class="form-control mb-3" name="phone" id="phone" value="{{ footer.phone }}">
+                        <label for="address" class="form-label">Адрес</label>
+                        <input type="text" class="form-control mb-3" name="address" id="address" value="{{ footer.address }}">
+                        <label for="email" class="form-label">E-mail</label>
+                        <input type="text" class="form-control mb-3" name="email" id="email" value="{{ footer.email }}">
+                        <label for="facebook" class="form-label">Facebook</label>
+                        <input type="text" class="form-control mb-3" name="facebook" id="facebook" value="{{ footer.facebook }}">
+                        <label for="twitter" class="form-label">Twitter</label>
+                        <input type="text" class="form-control mb-3" name="twitter" id="twitter" value="{{ footer.twitter }}">
+                        <label for="youtube" class="form-label">Youtube</label>
+                        <input type="text" class="form-control mb-3" name="youtube" id="youtube" value="{{ footer.youtube }}">
+                        <label for="instagram" class="form-label">Instagram</label>
+                        <input type="text" class="form-control mb-3" name="instagram" id="instagram" value="{{ footer.instagram }}">
+                        <label for="copyright" class="form-label">Copyright</label>
+                        <input type="text" class="form-control mb-3" name="copyright" id="copyright" value="{{ footer.copyright }}">
+                        <input type="submit" class="btn btn-success" value="Сохранить">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

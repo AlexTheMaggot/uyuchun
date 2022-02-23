@@ -1,6 +1,6 @@
 # Imports
 from django.shortcuts import render
-from admin.models import Header, IndexPage
+from admin.models import Header, IndexPage, Footer
 from .models import Category
 # End Imports
 
@@ -8,6 +8,7 @@ from .models import Category
 def get_context():
     context = {
         'header': Header.objects.first(),
+        'footer': Footer.objects.first(),
         'categories': Category.objects.all(),
     }
     return context
