@@ -11,6 +11,7 @@ urlpatterns = [
     path('testpage123/', views.index, name='index'),
     path('shop/', views.product_list, name='product_list'),
     path('shop/<slug:category_slug>/', views.category_detail, name='category_detail'),
+    path('shop/<slug:category_slug>/<slug:subcategory_slug>/', views.subcategory_detail, name='subcategory_detail'),
 
 ]
 # End Config
