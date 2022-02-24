@@ -21,6 +21,8 @@
                                 <option value="{{ category.id }}">{{ category.name }}</option>
                             {% endfor %}
                         </select>
+                        <label for="img" class="form-label">Изображение (600 x 750 px)</label>
+                        <input type="file" class="form-control mb-3" id="img" name="img">
                         <input type="submit" class="btn btn-success mt-5" value="Сохранить">
                     </form>
                 </div>
