@@ -14,7 +14,7 @@
 	<!-- End Preloader -->
 
 	<!-- Header -->
-    {% include 'blocks/header.html' %}
+    {% include 'blocks/main_header.html' %}
 	<!--/ End Header -->
 	
 	<!-- Slider Area -->
@@ -31,7 +31,7 @@
 										<h1><span>{{ indexpage.firstblock_title }} </span>{{ indexpage.firstblock_subtitle }}</h1>
 										<p>{{ indexpage.firstblock_description }}</p>
 										<div class="button">
-											<a href="#" class="btn">Перейти</a>
+											<a href="{% url 'mainapp:product_list' %}" class="btn">Перейти</a>
 										</div>
 									</div>
 								</div>
