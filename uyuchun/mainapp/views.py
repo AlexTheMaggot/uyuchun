@@ -39,4 +39,11 @@ def category_detail(request, category_slug):
     context['category_detail'] = get_object_or_404(Category, slug=category_slug)
     template = 'mainapp/category_detail.html'
     return render(request, template, context)
+
+
+def subcategory_detail(request, category_slug, subcategory_slug):
+    context = get_context()
+    context['subcategory'] = get_object_or_404(Category, slug=subcategory_slug)
+    template = 'mainapp/subcategory_detail.html'
+    return render(request, template, context)
 # End Config
