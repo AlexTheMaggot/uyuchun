@@ -45,11 +45,20 @@
                             <h3 class="title">Категории</h3>
                             <ul class="categor-list">
                                 {% for category in categories %}
+                                    <li>
                                     {% if category.id == category_detail.id %}
-                                        <li><a class="font-weight-bold" href="{% url 'mainapp:category_detail' category.slug %}">{{ category.name }}</a></li>
+                                        <a class="font-weight-bold" href="{% url 'mainapp:category_detail' category.slug %}">{{ category.name }}</a>
                                     {% else %}
-                                        <li><a href="{% url 'mainapp:category_detail' category.slug %}">{{ category.name }}</a></li>
+                                        <a href="{% url 'mainapp:category_detail' category.slug %}">{{ category.name }}</a>
                                     {% endif %}
+                                    {% if category.subcategories %}
+                                        <ul class="categor-list">
+                                            {% for subcategory in category.subcategories.all %}
+                                                <li><a href="#">{{ subcategory.name }}</a></li>
+                                            {% endfor %}
+                                        </ul>
+                                    {% endif %}
+                                    </li>
                                 {% endfor %}
                             </ul>
                         </div>
