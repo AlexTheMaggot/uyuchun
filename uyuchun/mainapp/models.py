@@ -14,6 +14,7 @@ class SubCategory(models.Model):
     slug = models.SlugField()
     category = models.ForeignKey(Category, null=True, blank=True, on_delete=models.SET_NULL,
                                  related_name='subcategories')
+    img = models.ImageField(upload_to='subcategories/', null=True, blank=True)
 
 
 class Product(models.Model):
