@@ -28,7 +28,11 @@
                         <label for="img" class="form-label">Изображение (600 x 750 px)</label>
                         <input type="file" class="form-control mb-3" id="img" name="img">
                         <p>Текущее изображение</p>
-                        <img src="{{ subcategory.img.url }}" alt="" class="h-100 d-block mb-3">
+                        {% if subcategory.img %}
+                            <img src="{{ subcategory.img.url }}" alt="" height="200px" class="d-block mb-3">
+                        {% else %}
+                            <p>Нет изображения</p>
+                        {% endif %}
                         <input type="submit" class="btn btn-success mt-5" value="Сохранить">
                     </form>
                 </div>
