@@ -171,7 +171,7 @@ def subcategory_create(request):
             template = 'admin/catalog/subcategory_create.html'
             return render(request, template, context)
         elif request.method == 'POST':
-            form = SubCategoryForm(request.POST)
+            form = SubCategoryForm(request.POST, request.FILES)
             if form.is_valid():
                 form.save()
                 return redirect('admin:subcategory_list')
@@ -195,7 +195,7 @@ def subcategory_update(request, subcategory_id):
             template = 'admin/catalog/subcategory_update.html'
             return render(request, template, context)
         elif request.method == 'POST':
-            form = SubCategoryForm(request.POST, instance=subcategory)
+            form = SubCategoryForm(request.POST, request.FILES, instance=subcategory)
             if form.is_valid():
                 form.save()
                 return redirect('admin:subcategory_list')
