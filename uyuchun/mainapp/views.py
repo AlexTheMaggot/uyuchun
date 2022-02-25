@@ -1,7 +1,7 @@
 # Imports
 from django.shortcuts import render, get_object_or_404
 from admin.models import Header, IndexPage, Footer
-from .models import Category, Product
+from .models import Category, Product, SubCategory
 # End Imports
 
 
@@ -43,7 +43,7 @@ def category_detail(request, category_slug):
 
 def subcategory_detail(request, category_slug, subcategory_slug):
     context = get_context()
-    context['subcategory'] = get_object_or_404(Category, slug=subcategory_slug)
+    context['subcategory_detail'] = get_object_or_404(SubCategory, slug=subcategory_slug)
     template = 'mainapp/subcategory_detail.html'
     return render(request, template, context)
 # End Config
