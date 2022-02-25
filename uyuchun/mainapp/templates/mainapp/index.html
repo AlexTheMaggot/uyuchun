@@ -132,7 +132,7 @@
 
 												<div class="single-product">
 													<div class="product-img">
-														<a href="product-details.html">
+														<a href="{% url 'mainapp:product_detail' product.subcategory.category.slug product.subcategory.slug product.slug %}">
                                                             {% if product.images %}
                                                                 <img class="default-img" src="{{ product.images.first.img.url }}" alt="#">
                                                                 <img class="hover-img" src="{{ product.images.first.img.url }}" alt="#">
@@ -153,9 +153,9 @@
 														</div>
 													</div>
 													<div class="product-content">
-														<h3><a href="product-details.html">{{ product.name }}</a></h3>
+														<h3><a href="{% url 'mainapp:product_detail' product.subcategory.category.slug product.subcategory.slug product.slug %}">{{ product.name }}</a></h3>
 														<div class="product-price">
-															<span>1 000 000 сум</span>
+															<span>{{ product.price }} UZS</span>
 														</div>
 													</div>
 												</div>
@@ -800,13 +800,3 @@
     {% include 'blocks/footer.html' %}
 	<!-- /End Footer Area -->
 {% endblock %}
-
-
-
-
-
-
-
-
-
-
