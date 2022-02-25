@@ -18,14 +18,17 @@ class IndexPage(models.Model):
     secondblock_first_second_title = models.CharField(max_length=200, null=True, blank=True)
     secondblock_first_subtitle = models.CharField(max_length=200, null=True, blank=True)
     secondblock_first_img = models.ImageField(upload_to='indexpage/', null=True, blank=True)
+    secondblock_first_link = models.CharField(max_length=200, null=True, blank=True)
     secondblock_second_first_title = models.CharField(max_length=200, null=True, blank=True)
     secondblock_second_second_title = models.CharField(max_length=200, null=True, blank=True)
     secondblock_second_subtitle = models.CharField(max_length=200, null=True, blank=True)
     secondblock_second_img = models.ImageField(upload_to='indexpage/', null=True, blank=True)
+    secondblock_second_link = models.CharField(max_length=200, null=True, blank=True)
     secondblock_third_first_title = models.CharField(max_length=200, null=True, blank=True)
     secondblock_third_second_title = models.CharField(max_length=200, null=True, blank=True)
     secondblock_third_subtitle = models.CharField(max_length=200, null=True, blank=True)
     secondblock_third_img = models.ImageField(upload_to='indexpage/', null=True, blank=True)
+    secondblock_third_link = models.CharField(max_length=200, null=True, blank=True)
 
 
 class Footer(models.Model):
