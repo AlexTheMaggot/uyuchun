@@ -54,7 +54,7 @@
                                     {% if category.subcategories %}
                                         <ul class="categor-list">
                                             {% for subcategory in category.subcategories.all %}
-                                                <li><a href="#">{{ subcategory.name }}</a></li>
+                                                <li><a href="{% url 'mainapp:subcategory_detail' category.slug subcategory.slug %}">{{ subcategory.name }}</a></li>
                                             {% endfor %}
                                         </ul>
                                     {% endif %}
@@ -207,7 +207,7 @@
                             <div class="col-lg-4 col-md-6 col-12">
                             <div class="single-product">
                                 <div class="product-img">
-                                    <a href="product-details.html">
+                                    <a href="{% url 'mainapp:subcategory_detail' category_detail.slug subcategory.slug %}">
                                         <img class="default-img" src="{{ subcategory.img.url }}" alt="#">
                                         <img class="hover-img" src="{{ subcategory.img.url }}" alt="#">
                                     </a>
@@ -227,7 +227,7 @@
                                     {% endcomment %}
                                 </div>
                                 <div class="product-content">
-                                    <h3><a href="product-details.html">{{ subcategory.name }}</a></h3>
+                                    <h3><a href="{% url 'mainapp:subcategory_detail' category_detail.slug subcategory.slug %}">{{ subcategory.name }}</a></h3>
                                 </div>
                             </div>
                         </div>
