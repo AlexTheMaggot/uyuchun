@@ -50,7 +50,7 @@
                                         {% if category.subcategories.all %}
                                             <ul class="categor-list">
                                                 {% for subcategory in category.subcategories.all %}
-                                                    <li><a href="#">{{ subcategory.name }}</a></li>
+                                                    <li><a href="{% url 'mainapp:subcategory_detail' subcategory.category.slug subcategory.slug %}">{{ subcategory.name }}</a></li>
                                                 {% endfor %}
                                             </ul>
                                         {% endif %}
@@ -203,7 +203,7 @@
                             <div class="col-lg-4 col-md-6 col-12">
                             <div class="single-product">
                                 <div class="product-img">
-                                    <a href="product-details.html">
+                                    <a href="{% url 'mainapp:product_detail' product.subcategory.category.slug product.subcategory.slug product.slug %}">
                                         <img class="default-img" src="{{ product.images.first.img.url }}" alt="#">
                                         <img class="hover-img" src="{{ product.images.first.img.url }}" alt="#">
                                     </a>
@@ -223,7 +223,7 @@
                                     </div>
                                 </div>
                                 <div class="product-content">
-                                    <h3><a href="product-details.html">{{ product.name }}</a></h3>
+                                    <h3><a href="{% url 'mainapp:product_detail' product.subcategory.category.slug product.subcategory.slug product.slug %}">{{ product.name }}</a></h3>
                                     <div class="product-price">
                                         <span>{{ product.price }} сум</span>
                                     </div>
