@@ -46,7 +46,7 @@
                             <ul class="categor-list">
                                 {% for category in categories %}
                                     <li>
-                                    {% if category.id == category_detail.id %}
+                                    {% if category.id == subcategory_detail.category.id %}
                                         <a class="font-weight-bold" href="{% url 'mainapp:category_detail' category.slug %}">{{ category.name }}</a>
                                     {% else %}
                                         <a href="{% url 'mainapp:category_detail' category.slug %}">{{ category.name }}</a>
@@ -54,7 +54,11 @@
                                     {% if category.subcategories %}
                                         <ul class="categor-list">
                                             {% for subcategory in category.subcategories.all %}
-                                                <li><a href="#">{{ subcategory.name }}</a></li>
+                                                {% if subcategory.id == subcategory_detail.id %}
+                                                    <li><a href="{% url 'mainapp:subcategory_detail' subcategory.category.slug subcategory.slug %}" class="font-weight-bold">{{ subcategory.name }}</a></li>
+                                                {% else %}
+                                                    <li><a href="{% url 'mainapp:subcategory_detail' subcategory.category.slug subcategory.slug %}">{{ subcategory.name }}</a></li>
+                                                {% endif %}
                                             {% endfor %}
                                         </ul>
                                     {% endif %}
@@ -203,13 +207,13 @@
                         </div>
                     </div>
                     <div class="row">
-                        {% for subcategory in category_detail.subcategories.all %}
+                        {% for product in subcategory_detail.products.all %}
                             <div class="col-lg-4 col-md-6 col-12">
                             <div class="single-product">
                                 <div class="product-img">
                                     <a href="product-details.html">
-                                        <img class="default-img" src="{{ subcategory.img.url }}" alt="#">
-                                        <img class="hover-img" src="{{ subcategory.img.url }}" alt="#">
+                                        <img class="default-img" src="{{ product.images.first.img.url }}" alt="#">
+                                        <img class="hover-img" src="{{ product.images.first.img.url }}" alt="#">
                                     </a>
                                     {% comment %}
                                         <div class="button-head">
@@ -227,7 +231,10 @@
                                     {% endcomment %}
                                 </div>
                                 <div class="product-content">
-                                    <h3><a href="product-details.html">{{ subcategory.name }}</a></h3>
+                                    <h3><a href="product-details.html">{{ product.name }}</a></h3>
+                                    <div class="product-price">
+                                        <span>{{ product.price }} UZS</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
