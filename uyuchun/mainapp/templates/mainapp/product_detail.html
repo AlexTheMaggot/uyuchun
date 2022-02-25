@@ -128,8 +128,8 @@
                                                 <a href="#" class="btn min"><i class="fa fa-compress"></i></a>
                                             </div>
                                             <p class="cat">Категория :<a href="{% url 'mainapp:category_detail' product.subcategory.category.slug %}">{{ product.subcategory.category.name }}</a></p>
-                                            <p class="cat">Подкатегория :<a href="{% url 'mainapp:subcategory_detail' product.subcategory.category.slug product.subcategory.slug %}">{{ product.subcategory.name }}</a></p>
-                                            <p class="availability">Доступно : 10 шт.</p>
+                                            <p class="cat mt-2">Подкатегория :<a href="{% url 'mainapp:subcategory_detail' product.subcategory.category.slug product.subcategory.slug %}">{{ product.subcategory.name }}</a></p>
+                                            <p class="availability mt-2">Доступно : 10 шт.</p>
                                         </div>
                                         <!--/ End Product Buy -->
                                     </div>
