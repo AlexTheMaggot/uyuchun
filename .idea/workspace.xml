@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a964e98d-d1bd-4bf0-9c13-631aec177d4e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/uyuchun/mainapp/templates/mainapp/subcategory_detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uyuchun/mainapp/templates/blocks/main_header.html" beforeDir="false" afterPath="$PROJECT_DIR$/uyuchun/mainapp/templates/blocks/main_header.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -145,140 +143,9 @@
       <workItem from="1644985747646" duration="152000" />
       <workItem from="1645466023379" duration="43000" />
       <workItem from="1645504275408" duration="5146000" />
-      <workItem from="1645617539283" duration="19559000" />
-    </task>
-    <task id="LOCAL-00050" summary="add admin header template">
-      <created>1644384224528</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1644384224529</updated>
-    </task>
-    <task id="LOCAL-00051" summary="add admin wrapper template">
-      <created>1644384240683</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1644384240683</updated>
-    </task>
-    <task id="LOCAL-00052" summary="add admin application">
-      <created>1644384321271</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1644384321271</updated>
-    </task>
-    <task id="LOCAL-00053" summary="add:&#10;Auth form&#10;Header form&#10;Index Page form">
-      <created>1644384358770</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1644384358770</updated>
-    </task>
-    <task id="LOCAL-00054" summary="add:&#10;Header model&#10;Index Page model">
-      <created>1644384388438</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1644384388438</updated>
-    </task>
-    <task id="LOCAL-00055" summary="add admin urls">
-      <created>1644384411602</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1644384411602</updated>
-    </task>
-    <task id="LOCAL-00056" summary="add admin views">
-      <created>1644384434142</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1644384434142</updated>
-    </task>
-    <task id="LOCAL-00057" summary="add content">
-      <created>1644384560278</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1644384560278</updated>
-    </task>
-    <task id="LOCAL-00058" summary="add:&#10;Product model&#10;Product Image model&#10;Category model&#10;SubCategory model">
-      <created>1644385503509</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1644385503509</updated>
-    </task>
-    <task id="LOCAL-00059" summary="change index url&#10;add plug url">
-      <created>1644385547592</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1644385547592</updated>
-    </task>
-    <task id="LOCAL-00060" summary="change index view&#10;add plug view&#10;add getting context function">
-      <created>1644385602103</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1644385602103</updated>
-    </task>
-    <task id="LOCAL-00061" summary="add:&#10;Product form&#10;Product Image form&#10;Category form&#10;SubCategory form">
-      <created>1644385645052</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1644385645052</updated>
-    </task>
-    <task id="LOCAL-00062" summary="add e-shop template">
-      <created>1644385706491</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1644385706491</updated>
-    </task>
-    <task id="LOCAL-00063" summary="add e-shop template">
-      <created>1644385761153</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1644385761153</updated>
-    </task>
-    <task id="LOCAL-00064" summary="add plug template">
-      <created>1644385773695</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1644385773695</updated>
-    </task>
-    <task id="LOCAL-00065" summary="internal update">
-      <created>1644385784328</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1644385784328</updated>
-    </task>
-    <task id="LOCAL-00066" summary="edit image input label">
-      <created>1644385882041</created>
-      <option name="number" value="00066" />
-      <option name="presentableId" value="LOCAL-00066" />
-      <option name="project" value="LOCAL" />
-      <updated>1644385882041</updated>
-    </task>
-    <task id="LOCAL-00067" summary="fixed bug with adding empty image">
-      <created>1644399979659</created>
-      <option name="number" value="00067" />
-      <option name="presentableId" value="LOCAL-00067" />
-      <option name="project" value="LOCAL" />
-      <updated>1644399979659</updated>
-    </task>
-    <task id="LOCAL-00068" summary="fixed a bug with wrong showing image">
-      <created>1644400103860</created>
-      <option name="number" value="00068" />
-      <option name="presentableId" value="LOCAL-00068" />
-      <option name="project" value="LOCAL" />
-      <updated>1644400103860</updated>
+      <workItem from="1645617539283" duration="20241000" />
+      <workItem from="1645763874642" duration="3845000" />
+      <workItem from="1645806295853" duration="8998000" />
     </task>
     <task id="LOCAL-00069" summary="adding content">
       <created>1644405800070</created>
@@ -490,7 +357,140 @@
       <option name="project" value="LOCAL" />
       <updated>1645726159264</updated>
     </task>
-    <option name="localTasksCounter" value="99" />
+    <task id="LOCAL-00099" summary="add subcategory detail links">
+      <created>1645726946836</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1645726946836</updated>
+    </task>
+    <task id="LOCAL-00100" summary="add subcategory detail template">
+      <created>1645726960684</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1645726960684</updated>
+    </task>
+    <task id="LOCAL-00101" summary="internal update">
+      <created>1645726973301</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1645726973301</updated>
+    </task>
+    <task id="LOCAL-00102" summary="add link to banners">
+      <created>1645807485088</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1645807485090</updated>
+    </task>
+    <task id="LOCAL-00103" summary="update migrates">
+      <created>1645808305544</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1645808305544</updated>
+    </task>
+    <task id="LOCAL-00104" summary="add links to banners in index page">
+      <created>1645808328616</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1645808328616</updated>
+    </task>
+    <task id="LOCAL-00105" summary="cobfigure links to subcategory detail">
+      <created>1645808677620</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1645808677620</updated>
+    </task>
+    <task id="LOCAL-00106" summary="add products to subcategory detail page">
+      <created>1645809828434</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1645809828434</updated>
+    </task>
+    <task id="LOCAL-00107" summary="fix name of subcategory variable">
+      <created>1645809846419</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1645809846419</updated>
+    </task>
+    <task id="LOCAL-00108" summary="add product detail url">
+      <created>1645810572205</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1645810572206</updated>
+    </task>
+    <task id="LOCAL-00109" summary="add product detail view">
+      <created>1645810702654</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1645810702654</updated>
+    </task>
+    <task id="LOCAL-00110" summary="add product detail template">
+      <created>1645811066810</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1645811066810</updated>
+    </task>
+    <task id="LOCAL-00111" summary="fix product detail path">
+      <created>1645811081570</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1645811081570</updated>
+    </task>
+    <task id="LOCAL-00112" summary="fix related products">
+      <created>1645813072697</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1645813072697</updated>
+    </task>
+    <task id="LOCAL-00113" summary="fix path's name">
+      <created>1645813106975</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1645813106975</updated>
+    </task>
+    <task id="LOCAL-00114" summary="fix subcategory and product links">
+      <created>1645813542015</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1645813542015</updated>
+    </task>
+    <task id="LOCAL-00115" summary="configure template">
+      <created>1645816943358</created>
+      <option name="number" value="00115" />
+      <option name="presentableId" value="LOCAL-00115" />
+      <option name="project" value="LOCAL" />
+      <updated>1645816943358</updated>
+    </task>
+    <task id="LOCAL-00116" summary="configure product links">
+      <created>1645817352847</created>
+      <option name="number" value="00116" />
+      <option name="presentableId" value="LOCAL-00116" />
+      <option name="project" value="LOCAL" />
+      <updated>1645817352847</updated>
+    </task>
+    <task id="LOCAL-00117" summary="fix category and subcategory margin">
+      <created>1645817367773</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
+      <option name="project" value="LOCAL" />
+      <updated>1645817367773</updated>
+    </task>
+    <option name="localTasksCounter" value="118" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -512,31 +512,31 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="internal update" />
-    <MESSAGE value="PEP8" />
-    <MESSAGE value="fix image bug" />
-    <MESSAGE value="add button &quot;go back&quot;" />
-    <MESSAGE value="add dynamic footer (changing elements in admin)" />
-    <MESSAGE value="fix long loading pages" />
-    <MESSAGE value="add image to subcategory model" />
-    <MESSAGE value="add product list and category detail urls" />
-    <MESSAGE value="add product list and category detail views" />
-    <MESSAGE value="divide header by main header and alternate" />
-    <MESSAGE value="update migrates" />
-    <MESSAGE value="add product list template" />
-    <MESSAGE value="add category detail template" />
-    <MESSAGE value="fix header and link" />
-    <MESSAGE value="add img to subcategory form" />
-    <MESSAGE value="fix adding files in forms" />
-    <MESSAGE value="add img to subcategory creating" />
-    <MESSAGE value="add img to subcategory updating" />
-    <MESSAGE value="fix no image bug" />
     <MESSAGE value="content update" />
     <MESSAGE value="add dynamic subcategory to template" />
     <MESSAGE value="make img field required" />
     <MESSAGE value="add subcategories in sindebar" />
     <MESSAGE value="add subcategory_detail url" />
     <MESSAGE value="add subcategory detail view" />
-    <option name="LAST_COMMIT_MESSAGE" value="add subcategory detail view" />
+    <MESSAGE value="add subcategory detail links" />
+    <MESSAGE value="add subcategory detail template" />
+    <MESSAGE value="internal update" />
+    <MESSAGE value="add link to banners" />
+    <MESSAGE value="update migrates" />
+    <MESSAGE value="add links to banners in index page" />
+    <MESSAGE value="cobfigure links to subcategory detail" />
+    <MESSAGE value="add products to subcategory detail page" />
+    <MESSAGE value="fix name of subcategory variable" />
+    <MESSAGE value="add product detail url" />
+    <MESSAGE value="add product detail view" />
+    <MESSAGE value="add product detail template" />
+    <MESSAGE value="fix product detail path" />
+    <MESSAGE value="fix related products" />
+    <MESSAGE value="fix path's name" />
+    <MESSAGE value="fix subcategory and product links" />
+    <MESSAGE value="configure template" />
+    <MESSAGE value="configure product links" />
+    <MESSAGE value="fix category and subcategory margin" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix category and subcategory margin" />
   </component>
 </project>
