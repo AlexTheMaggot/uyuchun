@@ -15,7 +15,7 @@ urlpatterns = [
     path(
         'shop/<slug:category_slug>/<slug:subcategory_slug>/<slug:product_slug>/',
         views.product_detail,
-        name='subcategory_detail'
+        name='product_detail'
     ),
 ]
 # End Config
