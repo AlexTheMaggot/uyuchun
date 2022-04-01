@@ -24,6 +24,7 @@ class Product(models.Model):
                                     related_name='products')
     price = models.BigIntegerField(null=True, blank=True)
     description = models.TextField(null=True, blank=True)
+    available = models.BooleanField(default=False)
 
 
 class ProductImage(models.Model):
