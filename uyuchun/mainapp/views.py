@@ -2,6 +2,7 @@
 from django.shortcuts import render, get_object_or_404
 from admin.models import Header, IndexPage, Footer
 from .models import Category, Product, SubCategory
+from django.http import Http404, HttpResponseNotFound
 # End Imports
 
 
@@ -29,7 +30,7 @@ def index(request):
 
 def product_list(request):
     context = get_context()
-    context['products'] = Product.objects.all()
+    context['products'] = Product.objects.filter(published=True)
     template = 'mainapp/product_list.html'
     return render(request, template, context)
 
@@ -50,7 +51,7 @@ def subcategory_detail(request, category_slug, subcategory_slug):
 
 def product_detail(request, category_slug, subcategory_slug, product_slug):
     context = get_context()
-    context['product'] = get_object_or_404(Product, slug=product_slug)
+    context['product'] = get_object_or_404(Product, slug=product_slug, published=True)
     template = 'mainapp/product_detail.html'
     return render(request, template, context)
 # End Config
