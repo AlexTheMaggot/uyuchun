@@ -20,6 +20,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'mainapp.apps.MainappConfig',
     'admin.apps.AdminConfig',
+    'api.apps.ApiConfig',
 ]
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
