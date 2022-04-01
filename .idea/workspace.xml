@@ -2,7 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a964e98d-d1bd-4bf0-9c13-631aec177d4e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uyuchun/api/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uyuchun/api/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uyuchun/api/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uyuchun/api/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uyuchun/api/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uyuchun/api/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uyuchun/api/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uyuchun/api/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uyuchun/mainapp/migrations/0006_product_available.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uyuchun/mainapp/migrations/0007_auto_20220401_1215.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uyuchun/admin/templates/admin/catalog/product_create.html" beforeDir="false" afterPath="$PROJECT_DIR$/uyuchun/admin/templates/admin/catalog/product_create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uyuchun/admin/templates/admin/catalog/product_update.html" beforeDir="false" afterPath="$PROJECT_DIR$/uyuchun/admin/templates/admin/catalog/product_update.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uyuchun/mainapp/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/uyuchun/mainapp/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uyuchun/mainapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/uyuchun/mainapp/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uyuchun/mainapp/templates/mainapp/product_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/uyuchun/mainapp/templates/mainapp/product_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uyuchun/uyuchun/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/uyuchun/uyuchun/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uyuchun/uyuchun/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/uyuchun/uyuchun/urls.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,7 +40,23 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="uyuchun: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="FavoritesManager">
@@ -31,10 +66,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="JavaScript File" />
         <option value="Less File" />
         <option value="Python Script" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -51,6 +86,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="jsx.switch.disabled" value="true" />
     <property name="list.type.of.created.stylesheet" value="Less" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -58,6 +94,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -77,6 +114,21 @@
           <option name="name" value="StatusDashboardGroupingRule" />
         </RuleState>
       </list>
+    </option>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@13cf007f" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+          </expand>
+          <select />
+        </treeState>
+      </serviceView>
     </option>
   </component>
   <component name="SvnConfiguration">
@@ -145,14 +197,16 @@
       <workItem from="1645504275408" duration="5146000" />
       <workItem from="1645617539283" duration="20241000" />
       <workItem from="1645763874642" duration="3845000" />
-      <workItem from="1645806295853" duration="8998000" />
-    </task>
-    <task id="LOCAL-00069" summary="adding content">
-      <created>1644405800070</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1644405800070</updated>
+      <workItem from="1645806295853" duration="9471000" />
+      <workItem from="1645903805191" duration="16000" />
+      <workItem from="1646812274530" duration="181000" />
+      <workItem from="1648019766690" duration="4535000" />
+      <workItem from="1648106326566" duration="1562000" />
+      <workItem from="1648141306357" duration="207000" />
+      <workItem from="1648141572504" duration="104000" />
+      <workItem from="1648143035699" duration="684000" />
+      <workItem from="1648486613213" duration="33336000" />
+      <workItem from="1648742909237" duration="9288000" />
     </task>
     <task id="LOCAL-00070" summary="fixed popular products">
       <created>1644405823358</created>
@@ -490,7 +544,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645817367773</updated>
     </task>
-    <option name="localTasksCounter" value="118" />
+    <task id="LOCAL-00118" summary="internal update">
+      <created>1645817760450</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1645817760450</updated>
+    </task>
+    <option name="localTasksCounter" value="119" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -520,7 +581,6 @@
     <MESSAGE value="add subcategory detail view" />
     <MESSAGE value="add subcategory detail links" />
     <MESSAGE value="add subcategory detail template" />
-    <MESSAGE value="internal update" />
     <MESSAGE value="add link to banners" />
     <MESSAGE value="update migrates" />
     <MESSAGE value="add links to banners in index page" />
@@ -537,6 +597,7 @@
     <MESSAGE value="configure template" />
     <MESSAGE value="configure product links" />
     <MESSAGE value="fix category and subcategory margin" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix category and subcategory margin" />
+    <MESSAGE value="internal update" />
+    <option name="LAST_COMMIT_MESSAGE" value="internal update" />
   </component>
 </project>
