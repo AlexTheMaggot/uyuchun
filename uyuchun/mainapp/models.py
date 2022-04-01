@@ -25,6 +25,7 @@ class Product(models.Model):
     price = models.BigIntegerField(null=True, blank=True)
     description = models.TextField(null=True, blank=True)
     available = models.BooleanField(default=False)
+    published = models.BooleanField(default=False)
 
 
 class ProductImage(models.Model):
