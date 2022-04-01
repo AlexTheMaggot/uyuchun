@@ -100,10 +100,16 @@
                                                 <li><a href="#" class="four">XL</a></li>
                                                 <li><a href="#" class="four">XXL</a></li>
                                             </ul>
+
                                         </div>
                                         <!--/ End Size -->
                                         <!-- Product Buy -->
                                         <div class="product-buy">
+                                            {% if product.available == True %}
+                                                <h6 class="text-success">В наличии</h6>
+                                            {% else %}
+                                                <h6 class="text-danger">Нет в наличии</h6>
+                                            {% endif %}
                                             <div class="quantity">
                                                 <h6>Количество :</h6>
                                                 <!-- Input Order -->
