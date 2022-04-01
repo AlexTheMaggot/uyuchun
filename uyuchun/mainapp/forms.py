@@ -17,7 +17,7 @@ class SubCategoryForm(forms.ModelForm):
 class ProductForm(forms.ModelForm):
     class Meta:
         model = Product
-        fields = ('name', 'slug', 'subcategory', 'description', 'price', 'available')
+        fields = ('name', 'slug', 'subcategory', 'description', 'price', 'available', 'published')
 
 
 class ProductImageForm(forms.ModelForm):
