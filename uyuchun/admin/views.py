@@ -337,6 +337,14 @@ def pages_indexpage(request):
         return redirect('admin:login')
 
 
+def handbook(request):
+    if request.user.is_authenticated:
+        template = 'admin/handbook.html'
+        return render(request, template)
+    else:
+        return redirect('admin:login')
+
+
 def error(request):
     if request.user.is_authenticated:
         template = 'admin/error.html'
