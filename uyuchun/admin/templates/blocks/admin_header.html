@@ -22,6 +22,11 @@
                     {% else %}
                         <a href="{% url 'admin:pages' %}" class="top-menu__link btn btn-dark">Страницы</a>
                     {% endif %}
+                    {% if '/handbook/' in request.path %}
+                        <a href="{% url 'admin:handbook' %}" class="top-menu__link btn btn-outline-dark">Справочник</a>
+                    {% else %}
+                        <a href="{% url 'admin:handbook' %}" class="top-menu__link btn btn-dark">Справочник</a>
+                    {% endif %}
             </div>
         </div>
         <div class="col-1 index__col">
