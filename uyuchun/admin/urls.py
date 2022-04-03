@@ -32,6 +32,13 @@ urlpatterns = [
     path('catalog/products/<int:product_id>/images/<int:image_id>/delete/', views.product_image_delete, name='product_image_delete'),
     # End Catalog
 
+    # Handbook
+    path('handbook/', views.handbook, name='handbook'),
+    # End Handbook
+
+
+
+
     # Pages
     path('pages/', views.pages, name='pages'),
     path('pages/indexpage/', views.pages_indexpage, name='pages_indexpage'),
