@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a964e98d-d1bd-4bf0-9c13-631aec177d4e" name="Default Changelist" comment="internal update">
-      <change afterPath="$PROJECT_DIR$/uyuchun/admin/templates/admin/measure_create.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uyuchun/admin/templates/admin/measure_list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uyuchun/admin/templates/admin/measure_update.html" afterDir="false" />
+    <list default="true" id="a964e98d-d1bd-4bf0-9c13-631aec177d4e" name="Default Changelist" comment="add specification field to template">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uyuchun/admin/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/uyuchun/admin/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uyuchun/admin/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/uyuchun/admin/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uyuchun/mainapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/uyuchun/mainapp/models.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -107,17 +101,7 @@
     <option name="allServicesViewState">
       <serviceView>
         <treeState>
-          <expand>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@5f4297bb" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-            </path>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@5f4297bb" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@3edd9396" type="9fbbdea:ServiceModel$ServiceNode" />
-            </path>
-          </expand>
+          <expand />
           <select />
         </treeState>
       </serviceView>
@@ -202,147 +186,7 @@
       <workItem from="1648833610693" duration="3269000" />
       <workItem from="1648923588681" duration="2008000" />
       <workItem from="1649005663643" duration="2145000" />
-      <workItem from="1649048093844" duration="17241000" />
-    </task>
-    <task id="LOCAL-00093" summary="content update">
-      <created>1645724331801</created>
-      <option name="number" value="00093" />
-      <option name="presentableId" value="LOCAL-00093" />
-      <option name="project" value="LOCAL" />
-      <updated>1645724331801</updated>
-    </task>
-    <task id="LOCAL-00094" summary="add dynamic subcategory to template">
-      <created>1645724361453</created>
-      <option name="number" value="00094" />
-      <option name="presentableId" value="LOCAL-00094" />
-      <option name="project" value="LOCAL" />
-      <updated>1645724361453</updated>
-    </task>
-    <task id="LOCAL-00095" summary="make img field required">
-      <created>1645724387064</created>
-      <option name="number" value="00095" />
-      <option name="presentableId" value="LOCAL-00095" />
-      <option name="project" value="LOCAL" />
-      <updated>1645724387064</updated>
-    </task>
-    <task id="LOCAL-00096" summary="add subcategories in sindebar">
-      <created>1645725391826</created>
-      <option name="number" value="00096" />
-      <option name="presentableId" value="LOCAL-00096" />
-      <option name="project" value="LOCAL" />
-      <updated>1645725391826</updated>
-    </task>
-    <task id="LOCAL-00097" summary="add subcategory_detail url">
-      <created>1645725631695</created>
-      <option name="number" value="00097" />
-      <option name="presentableId" value="LOCAL-00097" />
-      <option name="project" value="LOCAL" />
-      <updated>1645725631695</updated>
-    </task>
-    <task id="LOCAL-00098" summary="add subcategory detail view">
-      <created>1645726159264</created>
-      <option name="number" value="00098" />
-      <option name="presentableId" value="LOCAL-00098" />
-      <option name="project" value="LOCAL" />
-      <updated>1645726159264</updated>
-    </task>
-    <task id="LOCAL-00099" summary="add subcategory detail links">
-      <created>1645726946836</created>
-      <option name="number" value="00099" />
-      <option name="presentableId" value="LOCAL-00099" />
-      <option name="project" value="LOCAL" />
-      <updated>1645726946836</updated>
-    </task>
-    <task id="LOCAL-00100" summary="add subcategory detail template">
-      <created>1645726960684</created>
-      <option name="number" value="00100" />
-      <option name="presentableId" value="LOCAL-00100" />
-      <option name="project" value="LOCAL" />
-      <updated>1645726960684</updated>
-    </task>
-    <task id="LOCAL-00101" summary="internal update">
-      <created>1645726973301</created>
-      <option name="number" value="00101" />
-      <option name="presentableId" value="LOCAL-00101" />
-      <option name="project" value="LOCAL" />
-      <updated>1645726973301</updated>
-    </task>
-    <task id="LOCAL-00102" summary="add link to banners">
-      <created>1645807485088</created>
-      <option name="number" value="00102" />
-      <option name="presentableId" value="LOCAL-00102" />
-      <option name="project" value="LOCAL" />
-      <updated>1645807485090</updated>
-    </task>
-    <task id="LOCAL-00103" summary="update migrates">
-      <created>1645808305544</created>
-      <option name="number" value="00103" />
-      <option name="presentableId" value="LOCAL-00103" />
-      <option name="project" value="LOCAL" />
-      <updated>1645808305544</updated>
-    </task>
-    <task id="LOCAL-00104" summary="add links to banners in index page">
-      <created>1645808328616</created>
-      <option name="number" value="00104" />
-      <option name="presentableId" value="LOCAL-00104" />
-      <option name="project" value="LOCAL" />
-      <updated>1645808328616</updated>
-    </task>
-    <task id="LOCAL-00105" summary="cobfigure links to subcategory detail">
-      <created>1645808677620</created>
-      <option name="number" value="00105" />
-      <option name="presentableId" value="LOCAL-00105" />
-      <option name="project" value="LOCAL" />
-      <updated>1645808677620</updated>
-    </task>
-    <task id="LOCAL-00106" summary="add products to subcategory detail page">
-      <created>1645809828434</created>
-      <option name="number" value="00106" />
-      <option name="presentableId" value="LOCAL-00106" />
-      <option name="project" value="LOCAL" />
-      <updated>1645809828434</updated>
-    </task>
-    <task id="LOCAL-00107" summary="fix name of subcategory variable">
-      <created>1645809846419</created>
-      <option name="number" value="00107" />
-      <option name="presentableId" value="LOCAL-00107" />
-      <option name="project" value="LOCAL" />
-      <updated>1645809846419</updated>
-    </task>
-    <task id="LOCAL-00108" summary="add product detail url">
-      <created>1645810572205</created>
-      <option name="number" value="00108" />
-      <option name="presentableId" value="LOCAL-00108" />
-      <option name="project" value="LOCAL" />
-      <updated>1645810572206</updated>
-    </task>
-    <task id="LOCAL-00109" summary="add product detail view">
-      <created>1645810702654</created>
-      <option name="number" value="00109" />
-      <option name="presentableId" value="LOCAL-00109" />
-      <option name="project" value="LOCAL" />
-      <updated>1645810702654</updated>
-    </task>
-    <task id="LOCAL-00110" summary="add product detail template">
-      <created>1645811066810</created>
-      <option name="number" value="00110" />
-      <option name="presentableId" value="LOCAL-00110" />
-      <option name="project" value="LOCAL" />
-      <updated>1645811066810</updated>
-    </task>
-    <task id="LOCAL-00111" summary="fix product detail path">
-      <created>1645811081570</created>
-      <option name="number" value="00111" />
-      <option name="presentableId" value="LOCAL-00111" />
-      <option name="project" value="LOCAL" />
-      <updated>1645811081570</updated>
-    </task>
-    <task id="LOCAL-00112" summary="fix related products">
-      <created>1645813072697</created>
-      <option name="number" value="00112" />
-      <option name="presentableId" value="LOCAL-00112" />
-      <option name="project" value="LOCAL" />
-      <updated>1645813072697</updated>
+      <workItem from="1649048093844" duration="25446000" />
     </task>
     <task id="LOCAL-00113" summary="fix path's name">
       <created>1645813106975</created>
@@ -547,7 +391,147 @@
       <option name="project" value="LOCAL" />
       <updated>1649261250332</updated>
     </task>
-    <option name="localTasksCounter" value="142" />
+    <task id="LOCAL-00142" summary="add measure create template">
+      <created>1649261565026</created>
+      <option name="number" value="00142" />
+      <option name="presentableId" value="LOCAL-00142" />
+      <option name="project" value="LOCAL" />
+      <updated>1649261565026</updated>
+    </task>
+    <task id="LOCAL-00143" summary="add measure list template">
+      <created>1649261584627</created>
+      <option name="number" value="00143" />
+      <option name="presentableId" value="LOCAL-00143" />
+      <option name="project" value="LOCAL" />
+      <updated>1649261584628</updated>
+    </task>
+    <task id="LOCAL-00144" summary="add measure update template">
+      <created>1649261596434</created>
+      <option name="number" value="00144" />
+      <option name="presentableId" value="LOCAL-00144" />
+      <option name="project" value="LOCAL" />
+      <updated>1649261596434</updated>
+    </task>
+    <task id="LOCAL-00145" summary="add measure model">
+      <created>1649261615082</created>
+      <option name="number" value="00145" />
+      <option name="presentableId" value="LOCAL-00145" />
+      <option name="project" value="LOCAL" />
+      <updated>1649261615082</updated>
+    </task>
+    <task id="LOCAL-00146" summary="add measure urls">
+      <created>1649261633416</created>
+      <option name="number" value="00146" />
+      <option name="presentableId" value="LOCAL-00146" />
+      <option name="project" value="LOCAL" />
+      <updated>1649261633416</updated>
+    </task>
+    <task id="LOCAL-00147" summary="add measure views">
+      <created>1649261644804</created>
+      <option name="number" value="00147" />
+      <option name="presentableId" value="LOCAL-00147" />
+      <option name="project" value="LOCAL" />
+      <updated>1649261644804</updated>
+    </task>
+    <task id="LOCAL-00148" summary="internal update">
+      <created>1649261652959</created>
+      <option name="number" value="00148" />
+      <option name="presentableId" value="LOCAL-00148" />
+      <option name="project" value="LOCAL" />
+      <updated>1649261652959</updated>
+    </task>
+    <task id="LOCAL-00149" summary="migrations">
+      <created>1649271957181</created>
+      <option name="number" value="00149" />
+      <option name="presentableId" value="LOCAL-00149" />
+      <option name="project" value="LOCAL" />
+      <updated>1649271957181</updated>
+    </task>
+    <task id="LOCAL-00150" summary="add specification form, add specification field to subcategory form">
+      <created>1649272010171</created>
+      <option name="number" value="00150" />
+      <option name="presentableId" value="LOCAL-00150" />
+      <option name="project" value="LOCAL" />
+      <updated>1649272010171</updated>
+    </task>
+    <task id="LOCAL-00151" summary="add specifications link">
+      <created>1649272033427</created>
+      <option name="number" value="00151" />
+      <option name="presentableId" value="LOCAL-00151" />
+      <option name="project" value="LOCAL" />
+      <updated>1649272033427</updated>
+    </task>
+    <task id="LOCAL-00152" summary="content update">
+      <created>1649272048145</created>
+      <option name="number" value="00152" />
+      <option name="presentableId" value="LOCAL-00152" />
+      <option name="project" value="LOCAL" />
+      <updated>1649272048145</updated>
+    </task>
+    <task id="LOCAL-00153" summary="add specification model, add specification field to subcategory model">
+      <created>1649272108744</created>
+      <option name="number" value="00153" />
+      <option name="presentableId" value="LOCAL-00153" />
+      <option name="project" value="LOCAL" />
+      <updated>1649272108744</updated>
+    </task>
+    <task id="LOCAL-00154" summary="beautify code">
+      <created>1649272168433</created>
+      <option name="number" value="00154" />
+      <option name="presentableId" value="LOCAL-00154" />
+      <option name="project" value="LOCAL" />
+      <updated>1649272168433</updated>
+    </task>
+    <task id="LOCAL-00155" summary="add specification create template">
+      <created>1649272190123</created>
+      <option name="number" value="00155" />
+      <option name="presentableId" value="LOCAL-00155" />
+      <option name="project" value="LOCAL" />
+      <updated>1649272190123</updated>
+    </task>
+    <task id="LOCAL-00156" summary="add specification list template">
+      <created>1649272208069</created>
+      <option name="number" value="00156" />
+      <option name="presentableId" value="LOCAL-00156" />
+      <option name="project" value="LOCAL" />
+      <updated>1649272208069</updated>
+    </task>
+    <task id="LOCAL-00157" summary="add specification update template">
+      <created>1649272221009</created>
+      <option name="number" value="00157" />
+      <option name="presentableId" value="LOCAL-00157" />
+      <option name="project" value="LOCAL" />
+      <updated>1649272221009</updated>
+    </task>
+    <task id="LOCAL-00158" summary="add specification field to template">
+      <created>1649272244844</created>
+      <option name="number" value="00158" />
+      <option name="presentableId" value="LOCAL-00158" />
+      <option name="project" value="LOCAL" />
+      <updated>1649272244844</updated>
+    </task>
+    <task id="LOCAL-00159" summary="add specification field to template">
+      <created>1649272265370</created>
+      <option name="number" value="00159" />
+      <option name="presentableId" value="LOCAL-00159" />
+      <option name="project" value="LOCAL" />
+      <updated>1649272265371</updated>
+    </task>
+    <task id="LOCAL-00160" summary="add specification CRUD urls">
+      <created>1649272296142</created>
+      <option name="number" value="00160" />
+      <option name="presentableId" value="LOCAL-00160" />
+      <option name="project" value="LOCAL" />
+      <updated>1649272296142</updated>
+    </task>
+    <task id="LOCAL-00161" summary="add specification CRUD views, add specification queries to subcategory views">
+      <created>1649272350365</created>
+      <option name="number" value="00161" />
+      <option name="presentableId" value="LOCAL-00161" />
+      <option name="project" value="LOCAL" />
+      <updated>1649272350365</updated>
+    </task>
+    <option name="localTasksCounter" value="162" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -569,31 +553,31 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="fix path's name" />
-    <MESSAGE value="fix subcategory and product links" />
-    <MESSAGE value="configure template" />
-    <MESSAGE value="configure product links" />
-    <MESSAGE value="fix category and subcategory margin" />
-    <MESSAGE value="migrations" />
-    <MESSAGE value="add application Api" />
-    <MESSAGE value="add api url" />
-    <MESSAGE value="add available field to ProductForm" />
-    <MESSAGE value="add available field to ProductModel" />
-    <MESSAGE value="add available field to template" />
-    <MESSAGE value="add Api application" />
-    <MESSAGE value="add published field to ProductForm" />
-    <MESSAGE value="add published field to ProductModel" />
-    <MESSAGE value="make filters to hide not published products" />
-    <MESSAGE value="make published field to template" />
-    <MESSAGE value="filter unpublished products" />
-    <MESSAGE value="internal update" />
-    <MESSAGE value="add handbook link" />
     <MESSAGE value="add handbook template" />
     <MESSAGE value="add handbook url" />
     <MESSAGE value="add handbook view" />
     <MESSAGE value="migration" />
     <MESSAGE value="add measure form" />
     <MESSAGE value="add measure list link" />
-    <option name="LAST_COMMIT_MESSAGE" value="add measure list link" />
+    <MESSAGE value="add measure create template" />
+    <MESSAGE value="add measure list template" />
+    <MESSAGE value="add measure update template" />
+    <MESSAGE value="add measure model" />
+    <MESSAGE value="add measure urls" />
+    <MESSAGE value="add measure views" />
+    <MESSAGE value="internal update" />
+    <MESSAGE value="migrations" />
+    <MESSAGE value="add specification form, add specification field to subcategory form" />
+    <MESSAGE value="add specifications link" />
+    <MESSAGE value="content update" />
+    <MESSAGE value="add specification model, add specification field to subcategory model" />
+    <MESSAGE value="beautify code" />
+    <MESSAGE value="add specification create template" />
+    <MESSAGE value="add specification list template" />
+    <MESSAGE value="add specification update template" />
+    <MESSAGE value="add specification field to template" />
+    <MESSAGE value="add specification CRUD urls" />
+    <MESSAGE value="add specification CRUD views, add specification queries to subcategory views" />
+    <option name="LAST_COMMIT_MESSAGE" value="add specification CRUD views, add specification queries to subcategory views" />
   </component>
 </project>
