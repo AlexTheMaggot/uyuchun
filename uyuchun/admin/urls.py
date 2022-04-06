@@ -38,6 +38,12 @@ urlpatterns = [
     path('handbook/measures/add/', views.measure_create, name='measure_create'),
     path('handbook/measures/<int:measure_id>/edit/', views.measure_update, name='measure_update'),
     path('handbook/measures/<int:measure_id>/delete/', views.measure_delete, name='measure_delete'),
+    path('handbook/specifications/', views.specification_list, name='specification_list'),
+    path('handbook/specifications/add/', views.specification_create, name='specification_create'),
+    path('handbook/specifications/<int:specification_id>/edit/', views.specification_update,
+         name='specification_update'),
+    path('handbook/specifications/<int:specification_id>/delete/', views.specification_delete,
+         name='specification_delete'),
     # End Handbook
 
 
