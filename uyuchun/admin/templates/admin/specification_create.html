@@ -1,0 +1,28 @@
+{% extends 'admin_wrapper.html' %}
+{% block title %}Новая Характеристика{% endblock %}
+{% block content %}
+
+    <div class="container-fluid index">
+        {% include 'blocks/admin_header.html' %}
+        <div class="row">
+            <div class="col-12 index__col">
+                <div class="block-item">
+                    <h1 class="d-inline-block">Новая Характеристика</h1>
+                    <a href="{% url 'admin:specification_list' %}" class="btn btn-primary d-inline-block mb-3">Назад</a>
+                    <form class="w-25" action="" method="POST" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        <label for="name" class="form-label">Название характеристики</label>
+                        <input type="text" class="form-control mb-3" name="name" id="name">
+                        <label for="measure" class="form-label">Укажите Единицу измерения</label>
+                        <select class="form-select mb-3" name="measure" id="measure">
+                            {% for measure in measures %}
+                                <option value="{{ measure.id }}">{{ measure.name }}</option>
+                            {% endfor %}
+                        </select>
+                        <input type="submit" class="btn btn-success" value="Сохранить">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
