@@ -1,0 +1,33 @@
+{% extends 'admin_wrapper.html' %}
+{% block title %}Список Характеристик{% endblock %}
+{% block content %}
+
+    <div class="container-fluid index">
+        {% include 'blocks/admin_header.html' %}
+        <div class="row">
+            <div class="col-12 index__col">
+                <div class="block-item">
+                    <h1 class="d-inline-block mb-3">Все характеристики</h1>
+                    <a href="{% url 'admin:specification_create' %}" class="mb-3 btn btn-success d-inline-block">Добавить</a>
+                    <a href="{% url 'admin:handbook' %}" class="mb-3 btn btn-primary d-inline-block">Назад</a>
+                    <table class="table table-striped">
+                        {% for specification in specifications %}
+                            <tr class="align-middle">
+                                <td class="w-75 vertic">
+                                <p class="mb-0">{{ specification.name }}</p>
+                                </td>
+                                <td class="w-auto">
+                                    <a href="{% url 'admin:specification_update' specification.id %}" class="btn btn-warning">Изменить</a>
+                                </td>
+                                <td>
+                                    <a href="{% url 'admin:specification_delete' specification.id %}" class="btn btn-danger">Удалить</a>
+                                </td>
+
+                            </tr>
+                        {% endfor %}
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
