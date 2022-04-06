@@ -1,0 +1,24 @@
+{% extends 'admin_wrapper.html' %}
+{% block title %}{{ measure.name }} - изменить{% endblock %}
+{% block content %}
+
+    <div class="container-fluid index">
+        {% include 'blocks/admin_header.html' %}
+        <div class="row">
+            <div class="col-12 index__col">
+                <div class="block-item">
+                    <h1 class="d-inline-block">{{ measure.name }} - изменить</h1>
+                    <a href="{% url 'admin:measure_list' %}" class="btn btn-primary d-inline-block mb-3">Назад</a>
+                    <form class="w-25" action="" method="POST" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        <label for="name" class="form-label">Название единицы</label>
+                        <input type="text" class="form-control mb-3" name="name" id="name" value="{{ measure.name }}">
+                        <label for="short_name" class="form-label">Сокращенное название единицы</label>
+                        <input type="text" class="form-control mb-3" name="short_name" id="short_name" value="{{ measure.short_name }}">
+                        <input type="submit" class="btn btn-success" value="Сохранить">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
