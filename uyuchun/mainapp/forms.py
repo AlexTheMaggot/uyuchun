@@ -1,5 +1,5 @@
 from django import forms
-from .models import Category, SubCategory, Product, ProductImage, Measure
+from .models import Category, SubCategory, Product, ProductImage, Measure, Specification
 
 
 class CategoryForm(forms.ModelForm):
@@ -11,7 +11,7 @@ class CategoryForm(forms.ModelForm):
 class SubCategoryForm(forms.ModelForm):
     class Meta:
         model = SubCategory
-        fields = ('name', 'slug', 'category', 'img',)
+        fields = ('name', 'slug', 'category', 'img', 'specifications')
 
 
 class ProductForm(forms.ModelForm):
@@ -30,3 +30,9 @@ class MeasureForm(forms.ModelForm):
     class Meta:
         model = Measure
         fields = ('name', 'short_name')
+
+
+class SpecificationForm(forms.ModelForm):
+    class Meta:
+        model = Specification
+        fields = ('name', 'measure')
