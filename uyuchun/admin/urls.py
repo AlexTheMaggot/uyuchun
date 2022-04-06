@@ -34,6 +34,10 @@ urlpatterns = [
 
     # Handbook
     path('handbook/', views.handbook, name='handbook'),
+    path('handbook/measures/', views.measure_list, name='measure_list'),
+    path('handbook/measures/add/', views.measure_create, name='measure_create'),
+    path('handbook/measures/<int:measure_id>/edit/', views.measure_update, name='measure_update'),
+    path('handbook/measures/<int:measure_id>/delete/', views.measure_delete, name='measure_delete'),
     # End Handbook
 
 
