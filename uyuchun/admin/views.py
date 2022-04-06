@@ -1,12 +1,18 @@
-from django.shortcuts import render, redirect, HttpResponse
+# DjangoImports
 from django.contrib.auth.views import LoginView, LogoutView
+from django.shortcuts import render, redirect, HttpResponse
 from django.urls import reverse_lazy
+# End DjangoImports
+
+# InternalImports
 from .forms import AuthLoginForm, HeaderForm, IndexPageForm, FooterForm
 from .models import Header, IndexPage, Footer
-from mainapp.models import Category, SubCategory, Product, ProductImage
-from mainapp.forms import CategoryForm, SubCategoryForm, ProductForm, ProductImageForm
+from mainapp.forms import CategoryForm, SubCategoryForm, ProductForm, ProductImageForm, MeasureForm
+from mainapp.models import Category, SubCategory, Product, ProductImage, Measure
+# End InternalImports
 
 
+# Authentication
 class AuthLoginView(LoginView):
     template_name = 'admin/auth.html'
     form_class = AuthLoginForm
@@ -18,6 +24,7 @@ class AuthLoginView(LoginView):
 
 class AuthLogoutView(LogoutView):
     next_page = reverse_lazy('admin:login')
+# End Authentication
 
 
 def index(request):
@@ -28,6 +35,7 @@ def index(request):
         return redirect('admin:login')
 
 
+# Content
 def content(request):
     if request.user.is_authenticated:
         template = 'admin/content.html'
@@ -78,6 +86,7 @@ def content_footer(request):
             return HttpResponse(status=403)
     else:
         return redirect('admin:login')
+# End Content
 
 
 def catalog(request):
@@ -341,6 +350,66 @@ def handbook(request):
     if request.user.is_authenticated:
         template = 'admin/handbook.html'
         return render(request, template)
+    else:
+        return redirect('admin:login')
+
+
+def measure_list(request):
+    if request.user.is_authenticated:
+        context = {
+            'measures': Measure.objects.all()
+        }
+        template = 'admin/measure_list.html'
+        return render(request, template, context)
+    else:
+        return redirect('admin:login')
+
+
+def measure_create(request):
+    if request.user.is_authenticated:
+        if request.method == 'GET':
+            template = 'admin/measure_create.html'
+            return render(request, template)
+        elif request.method == 'POST':
+            form = MeasureForm(request.POST)
+            if form.is_valid():
+                form.save()
+                return redirect('admin:measure_list')
+            else:
+                return redirect('admin:error')
+        else:
+            return HttpResponse(status=403)
+    else:
+        return redirect('admin:login')
+
+
+def measure_update(request, measure_id):
+    if request.user.is_authenticated:
+        measure = Measure.objects.get(id=measure_id)
+        if request.method == 'GET':
+            context = {
+                'measure': measure,
+            }
+            template = 'admin/measure_update.html'
+            return render(request, template, context)
+        elif request.method == 'POST':
+            form = MeasureForm(request.POST, instance=measure)
+            if form.is_valid():
+                form.save()
+                return redirect('admin:measure_list')
+            else:
+                return redirect('admin:error')
+        else:
+            return HttpResponse(status=403)
+    else:
+        return redirect('admin:login')
+
+
+def measure_delete(request, measure_id):
+    if request.user.is_authenticated:
+        measure = Measure.objects.get(id=measure_id)
+        measure.delete()
+        return redirect('admin:measure_list')
     else:
         return redirect('admin:login')
 
