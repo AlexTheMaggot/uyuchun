@@ -1,7 +1,6 @@
 {% extends 'admin_wrapper.html' %}
 {% block title %}Список товаров{% endblock %}
 {% block content %}
-
     <div class="container-fluid index">
         {% include 'blocks/admin_header.html' %}
         <div class="row">
@@ -25,7 +24,6 @@
                                 <td>
                                     <a href="{% url 'admin:product_delete' product.id %}" class="btn btn-danger">Удалить</a>
                                 </td>
-
                             </tr>
                         {% endfor %}
                     </table>
