@@ -7,8 +7,8 @@ from django.urls import reverse_lazy
 # InternalImports
 from .forms import AuthLoginForm, HeaderForm, IndexPageForm, FooterForm
 from .models import Header, IndexPage, Footer
-from mainapp.forms import CategoryForm, SubCategoryForm, ProductForm, ProductImageForm, MeasureForm
-from mainapp.models import Category, SubCategory, Product, ProductImage, Measure
+from mainapp.forms import CategoryForm, SubCategoryForm, ProductForm, ProductImageForm, MeasureForm, SpecificationForm
+from mainapp.models import Category, SubCategory, Product, ProductImage, Measure, Specification
 # End InternalImports
 
 
@@ -175,7 +175,8 @@ def subcategory_create(request):
     if request.user.is_authenticated:
         if request.method == 'GET':
             context = {
-                'categories': Category.objects.all()
+                'categories': Category.objects.all(),
+                'specifications': Specification.objects.all(),
             }
             template = 'admin/catalog/subcategory_create.html'
             return render(request, template, context)
@@ -196,10 +197,12 @@ def subcategory_update(request, subcategory_id):
     if request.user.is_authenticated:
         categories = Category.objects.all()
         subcategory = SubCategory.objects.get(id=subcategory_id)
+        specifications = Specification.objects.all()
         if request.method == 'GET':
             context = {
                 'subcategory': subcategory,
                 'categories': categories,
+                'specifications': specifications,
             }
             template = 'admin/catalog/subcategory_update.html'
             return render(request, template, context)
@@ -410,6 +413,70 @@ def measure_delete(request, measure_id):
         measure = Measure.objects.get(id=measure_id)
         measure.delete()
         return redirect('admin:measure_list')
+    else:
+        return redirect('admin:login')
+
+
+def specification_list(request):
+    if request.user.is_authenticated:
+        context = {
+            'specifications': Specification.objects.all()
+        }
+        template = 'admin/specification_list.html'
+        return render(request, template, context)
+    else:
+        return redirect('admin:login')
+
+
+def specification_create(request):
+    if request.user.is_authenticated:
+        if request.method == 'GET':
+            context = {
+                'measures': Measure.objects.all()
+            }
+            template = 'admin/specification_create.html'
+            return render(request, template, context)
+        elif request.method == 'POST':
+            form = SpecificationForm(request.POST)
+            if form.is_valid():
+                form.save()
+                return redirect('admin:specification_list')
+            else:
+                return redirect('admin:error')
+        else:
+            return HttpResponse(status=403)
+    else:
+        return redirect('admin:login')
+
+
+def specification_update(request, specification_id):
+    if request.user.is_authenticated:
+        specification = Specification.objects.get(id=specification_id)
+        if request.method == 'GET':
+            context = {
+                'specification': specification,
+                'measures': Measure.objects.all()
+            }
+            template = 'admin/specification_update.html'
+            return render(request, template, context)
+        elif request.method == 'POST':
+            form = SpecificationForm(request.POST, instance=specification)
+            if form.is_valid():
+                form.save()
+                return redirect('admin:specification_list')
+            else:
+                return redirect('admin:error')
+        else:
+            return HttpResponse(status=403)
+    else:
+        return redirect('admin:login')
+
+
+def specification_delete(request, specification_id):
+    if request.user.is_authenticated:
+        specification = Specification.objects.get(id=specification_id)
+        specification.delete()
+        return redirect('admin:specification_list')
     else:
         return redirect('admin:login')
 
