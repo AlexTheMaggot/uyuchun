@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a964e98d-d1bd-4bf0-9c13-631aec177d4e" name="Default Changelist" comment="add specification field to template">
+    <list default="true" id="a964e98d-d1bd-4bf0-9c13-631aec177d4e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -75,7 +75,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -186,14 +186,10 @@
       <workItem from="1648833610693" duration="3269000" />
       <workItem from="1648923588681" duration="2008000" />
       <workItem from="1649005663643" duration="2145000" />
-      <workItem from="1649048093844" duration="25446000" />
-    </task>
-    <task id="LOCAL-00113" summary="fix path's name">
-      <created>1645813106975</created>
-      <option name="number" value="00113" />
-      <option name="presentableId" value="LOCAL-00113" />
-      <option name="project" value="LOCAL" />
-      <updated>1645813106975</updated>
+      <workItem from="1649048093844" duration="28317000" />
+      <workItem from="1649359046691" duration="880000" />
+      <workItem from="1649416859551" duration="2131000" />
+      <workItem from="1649440998972" duration="273000" />
     </task>
     <task id="LOCAL-00114" summary="fix subcategory and product links">
       <created>1645813542015</created>
@@ -531,7 +527,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649272350365</updated>
     </task>
-    <option name="localTasksCounter" value="162" />
+    <task id="LOCAL-00162" summary="internal update">
+      <created>1649272358323</created>
+      <option name="number" value="00162" />
+      <option name="presentableId" value="LOCAL-00162" />
+      <option name="project" value="LOCAL" />
+      <updated>1649272358323</updated>
+    </task>
+    <option name="localTasksCounter" value="163" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -565,7 +568,6 @@
     <MESSAGE value="add measure model" />
     <MESSAGE value="add measure urls" />
     <MESSAGE value="add measure views" />
-    <MESSAGE value="internal update" />
     <MESSAGE value="migrations" />
     <MESSAGE value="add specification form, add specification field to subcategory form" />
     <MESSAGE value="add specifications link" />
@@ -578,6 +580,7 @@
     <MESSAGE value="add specification field to template" />
     <MESSAGE value="add specification CRUD urls" />
     <MESSAGE value="add specification CRUD views, add specification queries to subcategory views" />
-    <option name="LAST_COMMIT_MESSAGE" value="add specification CRUD views, add specification queries to subcategory views" />
+    <MESSAGE value="internal update" />
+    <option name="LAST_COMMIT_MESSAGE" value="internal update" />
   </component>
 </project>
