@@ -43,4 +43,12 @@ class Product(models.Model):
 class ProductImage(models.Model):
     img = models.ImageField(upload_to='products/', null=True, blank=True)
     product = models.ForeignKey(Product, null=True, blank=True, on_delete=models.SET_NULL, related_name='images')
+
+
+class ProductSpecification(models.Model):
+    product = models.ForeignKey(Product, null=True, blank=True, on_delete=models.CASCADE,
+                                related_name='productspecifications')
+    specification = models.ForeignKey(Specification, null=True, blank=True, on_delete=models.CASCADE,
+                                      related_name='productspecifications')
+    value = models.CharField(max_length=200, null=True, blank=True)
 # End Config
