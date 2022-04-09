@@ -8,7 +8,7 @@ from django.urls import reverse_lazy
 from .forms import AuthLoginForm, HeaderForm, IndexPageForm, FooterForm
 from .models import Header, IndexPage, Footer
 from mainapp.forms import CategoryForm, SubCategoryForm, ProductForm, ProductImageForm, MeasureForm, SpecificationForm
-from mainapp.models import Category, SubCategory, Product, ProductImage, Measure, Specification
+from mainapp.models import Category, SubCategory, Product, ProductImage, Measure, Specification, ProductSpecification
 # End InternalImports
 
 
@@ -253,6 +253,10 @@ def product_create(request):
             form = ProductForm(request.POST)
             if form.is_valid():
                 form.save()
+                product = Product.objects.get(id=form.save().id)
+                for item in product.subcategory.specifications.all():
+                    new_spec = ProductSpecification(product=product, specification=item)
+                    new_spec.save()
                 return redirect('admin:product_list')
             else:
                 return redirect('admin:error')
