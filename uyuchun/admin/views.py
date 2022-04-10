@@ -319,9 +319,33 @@ def product_image(request, product_id):
 
 
 def product_image_delete(request, product_id, image_id):
-    image = ProductImage.objects.get(id=image_id)
-    image.delete()
-    return redirect('admin:product_image', product_id)
+    if request.user.is_authenticated:
+        image = ProductImage.objects.get(id=image_id)
+        image.delete()
+        return redirect('admin:product_image', product_id)
+    else:
+        return redirect('admin:login')
+
+
+def product_specifications(request, product_id):
+    if request.user.is_authenticated:
+        product = Product.objects.get(id=product_id)
+        if request.method == 'GET':
+            context = {
+                'product': product,
+            }
+            template = 'admin/catalog/product_specifications.html'
+            return render(request, template, context)
+        elif request.method == 'POST':
+            for item in product.productspecifications.all():
+                item.value = request.POST['spec_'+str(item.id)]
+                item.save()
+            return redirect('admin:product_list')
+        else:
+            return HttpResponse(status=403)
+    else:
+        return redirect('admin:login')
+
 # End Product
 
 
