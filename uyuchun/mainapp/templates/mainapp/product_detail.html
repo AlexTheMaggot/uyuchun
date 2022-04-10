@@ -164,10 +164,9 @@
                                                             <div class="single-des">
                                                                 <h4>Основные характеристики:</h4>
                                                                 <ul>
-                                                                    <li>Первая характеристика</li>
-                                                                    <li>Вторая характеристика</li>
-                                                                    <li>Третья характеристика</li>
-                                                                    <li>Четвертая характеристика</li>
+                                                                    {% for item in product.productspecifications.all %}
+                                                                        <li>{{ item.specification.name }} - {{ item.value }} {{ item.specification.measure.short_name }}</li>
+                                                                    {% endfor %}
                                                                 </ul>
                                                             </div>
                                                         </div>
