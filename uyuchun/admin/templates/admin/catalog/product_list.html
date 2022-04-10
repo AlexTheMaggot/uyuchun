@@ -16,6 +16,9 @@
                                 <p class="mb-0">{{ product.name }}</p>
                                 </td>
                                 <td class="w-auto">
+                                    <a href="{% url 'admin:product_specifications' product.id %}" class="btn btn-primary">Характеристики</a>
+                                </td>
+                                <td class="w-auto">
                                     <a href="{% url 'admin:product_image' product.id %}" class="btn btn-primary">Изображения</a>
                                 </td>
                                 <td class="w-auto">
