@@ -29,7 +29,10 @@ urlpatterns = [
     path('catalog/products/<int:product_id>/edit/', views.product_update, name='product_update'),
     path('catalog/products/<int:product_id>/delete/', views.product_delete, name='product_delete'),
     path('catalog/products/<int:product_id>/images/', views.product_image, name='product_image'),
-    path('catalog/products/<int:product_id>/images/<int:image_id>/delete/', views.product_image_delete, name='product_image_delete'),
+    path('catalog/products/<int:product_id>/images/<int:image_id>/delete/', views.product_image_delete,
+         name='product_image_delete'),
+    path('catalog/products/<int:product_id>/specifications/', views.product_specifications,
+         name='product_specifications'),
     # End Catalog
 
     # Handbook
