@@ -17,6 +17,9 @@
                                 <p class="mb-0">{{ subcategory.name }}</p>
                                 </td>
                                 <td class="w-auto">
+                                    <a href="{% url 'admin:subcategoryspecification_list' subcategory.id %}" class="btn btn-primary">Характеристики</a>
+                                </td>
+                                <td class="w-auto">
                                     <a href="{% url 'admin:subcategory_update' subcategory.id %}" class="btn btn-warning">Изменить</a>
                                 </td>
                                 <td>
