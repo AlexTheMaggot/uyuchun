@@ -1,0 +1,29 @@
+{% extends 'admin_wrapper.html' %}
+{% block title %}Характеристики для {{ subcategory.name }}{% endblock %}
+{% block content %}
+
+    <div class="container-fluid index">
+        {% include 'blocks/admin_header.html' %}
+        <div class="row">
+            <div class="col-12 index__col">
+                <div class="block-item">
+                    <h1 class="d-inline-block mb-3">Характеристики для {{ subcategory.name }}</h1>
+                    <a href="{% url 'admin:index' %}" class="mb-3 btn btn-success d-inline-block">Добавить</a>
+                    <a href="{% url 'admin:subcategory_list' %}" class="mb-3 btn btn-primary d-inline-block">Назад</a>
+                    <table class="table table-striped">
+                        {% for item in subcategoryspecifications %}
+                            <tr class="align-middle">
+                                <td class="w-75 vertic">
+                                <p class="mb-0">{{ item.specification.name }}</p>
+                                </td>
+                                <td>
+                                    <a href="{% url 'admin:index' %}" class="btn btn-danger">Удалить</a>
+                                </td>
+                            </tr>
+                        {% endfor %}
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
