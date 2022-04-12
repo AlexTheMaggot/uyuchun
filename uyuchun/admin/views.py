@@ -226,6 +226,20 @@ def subcategory_delete(request, subcategory_id):
         return redirect('admin:subcategory_list')
     else:
         return redirect('admin:login')
+
+
+def subcategoryspecification_list(request, subcategory_id):
+    if request.user.is_authenticated:
+        subcategory = SubCategory.objects.get(id=subcategory_id)
+        subcategoryspecifications = subcategory.subcategoryspecifications.all()
+        context = {
+            'subcategory': subcategory,
+            'subcategoryspecifications': subcategoryspecifications,
+        }
+        template = 'admin/catalog/subcategoryspecification_list.html'
+        return render(request, template, context)
+    else:
+        return redirect('admin:login')
 # End SubCategory
 
 
