@@ -29,6 +29,13 @@ class SubCategory(models.Model):
     specifications = models.ManyToManyField(Specification, related_name='subcategories', null=True, blank=True)
 
 
+class SubCategorySpecification(models.Model):
+    subcategory = models.ForeignKey(SubCategory, null=True, blank=True, on_delete=models.CASCADE,
+                                 related_name='subcategoryspecifications')
+    specification = models.ForeignKey(Specification, null=True, blank=True, on_delete=models.CASCADE,
+                                    related_name='subcategoryspecifications')
+
+
 class Product(models.Model):
     name = models.CharField(max_length=200, null=True, blank=True)
     slug = models.SlugField()
