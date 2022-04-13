@@ -23,12 +23,6 @@
                         </select>
                         <label for="img" class="form-label">Изображение (600 x 750 px)</label>
                         <input type="file" required class="form-control mb-3" id="img" name="img">
-                        <label for="specifications" class="form-label">Укажите характеристики</label>
-                        <select class="form-select" name="specifications" id="specifications" multiple>
-                            {% for specification in specifications %}
-                                <option value="{{ specification.id }}">{{ specification.name }}</option>
-                            {% endfor %}
-                        </select>
                         <input type="submit" class="btn btn-success mt-5" value="Сохранить">
                     </form>
                 </div>
