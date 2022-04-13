@@ -165,7 +165,7 @@
                                                                 <h4>Основные характеристики:</h4>
                                                                 <ul>
                                                                     {% for item in product.productspecifications.all %}
-                                                                        <li>{{ item.specification.name }} - {{ item.value }} {{ item.specification.measure.short_name }}</li>
+                                                                        <li>{{ item.subcategoryspecification.specification.name }} - {{ item.value }} {{ item.subcategoryspecification.specification.measure.short_name }}</li>
                                                                     {% endfor %}
                                                                 </ul>
                                                             </div>
