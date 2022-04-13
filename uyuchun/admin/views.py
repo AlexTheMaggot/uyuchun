@@ -244,8 +244,8 @@ def subcategoryspecification_list(request, subcategory_id):
 
 def subcategoryspecification_create(request, subcategory_id):
     if request.user.is_authenticated:
+        subcategory = SubCategory.objects.get(id=subcategory_id)
         if request.method == 'GET':
-            subcategory = SubCategory.objects.get(id=subcategory_id)
             specifications = Specification.objects.all()
             context = {
                 'subcategory': subcategory,
@@ -257,6 +257,10 @@ def subcategoryspecification_create(request, subcategory_id):
             form = SubCategorySpecificationForm(request.POST, request.FILES)
             if form.is_valid():
                 form.save()
+                for item in subcategory.products.all():
+                    productspecification = ProductSpecification(
+                        subcategoryspecification=form.save(), product=item)
+                    productspecification.save()
                 return redirect('admin:subcategoryspecification_list', subcategory_id)
             else:
                 return redirect('admin:error')
@@ -300,6 +304,9 @@ def product_create(request):
             form = ProductForm(request.POST)
             if form.is_valid():
                 form.save()
+                for item in form.save().subcategory.subcategoryspecifications.all():
+                    productspecification = ProductSpecification(product=form.save(), subcategoryspecification=item)
+                    productspecification.save()
                 return redirect('admin:product_list')
             else:
                 return redirect('admin:error')
