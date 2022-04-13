@@ -12,7 +12,7 @@
                     <form class="w-25" action="" method="POST" enctype="multipart/form-data">
                         {% csrf_token %}
                         {% for item in product.productspecifications.all %}
-                            <label for="spec_{{ item.id }}" class="form-label">{{ item.specification.name }}</label>
+                            <label for="spec_{{ item.id }}" class="form-label">{{ item.subcategoryspecification.specification.name }}</label>
                             <input type="text" class="form-control mb-3" name="spec_{{ item.id }}" id="spec_{{ item.id }}" value="{{ item.value }}">
                         {% endfor %}
                         <input type="submit" class="btn btn-success" value="Сохранить">
