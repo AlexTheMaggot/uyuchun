@@ -26,7 +26,6 @@ class SubCategory(models.Model):
     category = models.ForeignKey(Category, null=True, blank=True, on_delete=models.SET_NULL,
                                  related_name='subcategories')
     img = models.ImageField(upload_to='subcategories/', null=True, blank=True)
-    specifications = models.ManyToManyField(Specification, related_name='subcategories', null=True, blank=True)
 
 
 class SubCategorySpecification(models.Model):
