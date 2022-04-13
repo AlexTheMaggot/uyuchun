@@ -54,7 +54,7 @@ class ProductImage(models.Model):
 class ProductSpecification(models.Model):
     product = models.ForeignKey(Product, null=True, blank=True, on_delete=models.CASCADE,
                                 related_name='productspecifications')
-    specification = models.ForeignKey(Specification, null=True, blank=True, on_delete=models.CASCADE,
+    subcategoryspecification = models.ForeignKey(SubCategorySpecification, null=True, blank=True, on_delete=models.CASCADE,
                                       related_name='productspecifications')
     value = models.CharField(max_length=200, null=True, blank=True)
 # End Config
