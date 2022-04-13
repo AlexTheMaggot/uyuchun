@@ -300,10 +300,6 @@ def product_create(request):
             form = ProductForm(request.POST)
             if form.is_valid():
                 form.save()
-                product = Product.objects.get(id=form.save().id)
-                for item in product.subcategory.specifications.all():
-                    new_spec = ProductSpecification(product=product, specification=item)
-                    new_spec.save()
                 return redirect('admin:product_list')
             else:
                 return redirect('admin:error')
