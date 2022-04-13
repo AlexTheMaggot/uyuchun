@@ -7,8 +7,8 @@ from django.urls import reverse_lazy
 # InternalImports
 from .forms import AuthLoginForm, HeaderForm, IndexPageForm, FooterForm
 from .models import Header, IndexPage, Footer
-from mainapp.forms import CategoryForm, SubCategoryForm, ProductForm, ProductImageForm, MeasureForm, SpecificationForm
-from mainapp.models import Category, SubCategory, Product, ProductImage, Measure, Specification, ProductSpecification
+from mainapp.forms import *
+from mainapp.models import *
 # End InternalImports
 
 
@@ -238,6 +238,39 @@ def subcategoryspecification_list(request, subcategory_id):
         }
         template = 'admin/catalog/subcategoryspecification_list.html'
         return render(request, template, context)
+    else:
+        return redirect('admin:login')
+
+
+def subcategoryspecification_create(request, subcategory_id):
+    if request.user.is_authenticated:
+        if request.method == 'GET':
+            subcategory = SubCategory.objects.get(id=subcategory_id)
+            specifications = Specification.objects.all()
+            context = {
+                'subcategory': subcategory,
+                'specifications': specifications,
+            }
+            template = 'admin/catalog/subcategoryspecification_create.html'
+            return render(request, template, context)
+        elif request.method == 'POST':
+            form = SubCategorySpecificationForm(request.POST, request.FILES)
+            if form.is_valid():
+                form.save()
+                return redirect('admin:subcategoryspecification_list', subcategory_id)
+            else:
+                return redirect('admin:error')
+        else:
+            return HttpResponse(status=403)
+    else:
+        return redirect('admin:login')
+
+
+def subcategoryspecification_delete(request, subcategory_id, subcategoryspecification_id):
+    if request.user.is_authenticated:
+        subcategoryspecification = SubCategorySpecification.objects.get(id=subcategoryspecification_id)
+        subcategoryspecification.delete()
+        return redirect('admin:subcategoryspecification_list', subcategory_id)
     else:
         return redirect('admin:login')
 # End SubCategory
