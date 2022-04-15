@@ -17,5 +17,6 @@ urlpatterns = [
         views.product_detail,
         name='product_detail'
     ),
+    path('search/', views.search, name='search'),
 ]
 # End Config
