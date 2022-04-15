@@ -54,4 +54,14 @@ def product_detail(request, category_slug, subcategory_slug, product_slug):
     context['product'] = get_object_or_404(Product, slug=product_slug, published=True)
     template = 'mainapp/product_detail.html'
     return render(request, template, context)
+
+
+def search(request):
+    context = get_context()
+    if request.GET['category'] == 'all':
+        context['products'] = Product.objects.filter(name__icontains=str(request.GET['name']))
+    else:
+        context['products'] = Product.objects.filter(subcategory__category=int(request.GET['category'])).filter(name__icontains=str(request.GET['name']))
+    template = 'mainapp/search.html'
+    return render(request, template, context)
 # End Config
