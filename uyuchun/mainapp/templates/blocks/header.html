@@ -57,15 +57,15 @@
                 <div class="col-lg-8 col-md-7 col-12">
                     <div class="search-bar-top">
                         <div class="search-bar">
-                            <select>
-                                <option selected="selected">Все категории</option>
+                            <form action="{% url 'mainapp:search' %}" method="GET" style="width: auto;">
+                            <select name="category">
+                                <option selected="selected" value="all">Все категории</option>
                                 {% for category in categories %}
-                                    <option>{{ category.name }}</option>
+                                    <option value="{{ category.id }}">{{ category.name }}</option>
                                 {% endfor %}
                             </select>
-                            <form>
-                                <input name="search" placeholder="Поиск....." type="search">
-                                <button class="btnn"><i class="ti-search"></i></button>
+                                <input name="name" placeholder="Поиск....." type="search">
+                                <button type="submit" class="btnn"><i class="ti-search"></i></button>
                             </form>
                         </div>
                     </div>
