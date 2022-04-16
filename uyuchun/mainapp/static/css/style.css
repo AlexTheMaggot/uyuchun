@@ -783,6 +783,8 @@ Version:1.0
 	background: #fff;
 	z-index: 1;
 	width: 100%;
+	height: 50vh;
+	overflow: scroll;
 	-webkit-box-shadow: 0px 5px 15px #0000000a;
 	-moz-box-shadow: 0px 5px 15px #0000000a;
 	box-shadow: 0px 5px 15px #0000000a;
@@ -810,9 +812,12 @@ Version:1.0
 .header.shop .sub-category {
 	background: #fff;
 	width: 220px;
-	position: absolute;
-	left: 238px;
-	top: 0;
+	position: relative;
+	height: 0;
+	overflow: hidden;
+	/*position: absolute;*/
+	/*left: 238px;*/
+	/*top: 0;*/
 	z-index: 999999;
 	opacity: 0;
 	visibility: hidden;
@@ -824,10 +829,15 @@ Version:1.0
 	-moz-box-shadow: 0px 5px 15px #0000000a;
 	box-shadow: 0px 5px 15px #0000000a;
 }
-.header.shop .main-category li:hover .sub-category{
-	opacity:1;
-	visibility:visible;
+.header.shop .sub-category_active {
+	height: auto;
+	opacity: 1;
+	visibility: visible;
 }
+/*.header.shop .main-category li:hover .sub-category{*/
+/*	opacity:1;*/
+/*	visibility:visible;*/
+/*}*/
 .header.shop .main-category li a{
 	text-transform:capitalize;
 	font-weight:400;
@@ -4946,3 +4956,8 @@ Version:1.0
 /*=============================
 	End Footer CSS
 ===============================*/
+
+.niceselect {
+	height: 50vh;
+	overflow: scroll;
+}
