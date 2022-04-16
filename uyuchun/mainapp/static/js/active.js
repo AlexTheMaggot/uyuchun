@@ -287,7 +287,17 @@ Version:1.0
 			animation: 'fade'
 		});  
 		
-	});
+		$('.main-category>li>a').on('click', function (e) {
+			e.preventDefault();
+			let submenu = $(this).attr('data-submenu');
+			if ($(submenu).hasClass('sub-category_active')) {
+				$(submenu).removeClass('sub-category_active');
+			}
+			else {
+				$(submenu).addClass('sub-category_active');
+			}
+		});
+	 });
 	
 	/*====================================
 	18. Nice Select JS
