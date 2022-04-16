@@ -127,7 +127,9 @@
     box-sizing: border-box;
     margin-top: 4px;
     opacity: 0;
-    overflow: hidden;
+    /* Hide option for correct appearence on header*/
+    /*overflow: hidden;*/
+    /* Hide option for correct appearence on header*/
     padding: 0;
     pointer-events: none;
     position: absolute;
