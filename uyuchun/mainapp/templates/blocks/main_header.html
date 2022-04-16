@@ -129,8 +129,8 @@
                             <h3 class="cat-heading"><i class="fa fa-bars" aria-hidden="true"></i>Категории</h3>
                             <ul class="main-category">
                                   {% for category in categories %}
-                                      <li><a href="{% url 'mainapp:category_detail' category.slug %}">{{ category.name }}<i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                                        <ul class="sub-category">
+                                      <li><a data-submenu="#sub_menu{{ category.id }}" href="{% url 'mainapp:category_detail' category.slug %}">{{ category.name }}<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                        <ul class="sub-category" id="sub_menu{{ category.id }}">
                                             {% for subcategory in category.subcategories.all %}
                                                 <li><a href="{% url 'mainapp:subcategory_detail' category.slug subcategory.slug %}">{{ subcategory.name }}</a></li>
                                             {% endfor %}
