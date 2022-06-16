@@ -93,4 +93,6 @@ STATICFILES_DIRS = (
 )
 # End StaticAndMedia
 
+DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
+
 # End Config
